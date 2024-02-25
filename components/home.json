@@ -1,0 +1,335 @@
+{
+    "id": "60eadf5d-68f4-469c-b015-9b0658e4704f",
+    "component": "",
+    "slots": {
+        "children": {
+            "id": "eb32c9df-9d0c-4e7f-b9ea-79440394e628",
+            "blocks": [{
+                "id": "2fab3248-74a6-480c-a9b7-200e6ee5bf87",
+                "component": "DocsNavBar",
+                "slots": {},
+                "children": {
+                    "nav": {
+                        "id": "d75cab58-34a7-49fc-b26a-e7cd58d53d70",
+                        "slots": {},
+                        "children": {
+                            "navItem": {
+                                "id": "2dcf66f2-7016-4e20-b0ff-da4062980b05",
+                                "slots": {},
+                                "children": {
+                                    "navItemName": {
+                                        "id": "bb758939-e899-4b30-947e-be14cc281962",
+                                        "slots": {},
+                                        "children": {},
+                                        "props": {},
+                                        "styles": {},
+                                        "extra": {}
+                                    }
+                                },
+                                "props": {},
+                                "styles": {
+                                    "flexGrow": 0,
+                                    "flexShrink": 1,
+                                    "marginRight": -1,
+                                    "paddingRight": 32,
+                                    "paddingLeft": 32,
+                                    "minWidth": 157,
+                                    "display": "flex",
+                                    "justifyContent": "center",
+                                    "alignItems": "center"
+                                },
+                                "extra": {}
+                            }
+                        },
+                        "props": {},
+                        "styles": {},
+                        "extra": {}
+                    }
+                },
+                "props": {},
+                "styles": {
+                    "display": "flex",
+                    "padding": "24px",
+                    "gap": "24px"
+                },
+                "extra": {}
+            }, {
+                "id": "1c083c53-628b-4aaf-acd6-ddf9783ab296",
+                "component": "Text",
+                "slots": {},
+                "children": {},
+                "props": {
+                    "text": "Raber"
+                },
+                "styles": {
+                    "fontWeight": 900,
+                    "fontSize": "3.75rem",
+                    "lineHeight": "1",
+                    "textAlign": "center",
+                    "paddingTop": 100,
+                    "paddingBottom": 100
+                },
+                "extra": {
+                    "font": {
+                        "fontSizeLevel": 7,
+                        "align": "center"
+                    }
+                }
+            }, {
+                "id": "798bae1e-5367-45c0-b11b-8e3f086dc0c5",
+                "component": "Image",
+                "slots": {},
+                "children": {},
+                "props": {
+                    "src": "https://firebasestorage.googleapis.com/v0/b/react-builder-c9ea4.appspot.com/o/assets%2FJtQuYE0FSAOEUUOENIEe21r14Cr1%2F09d2ad4d95e0c7f34ef50283c9155cd953dd46ade430da8e19fe6eb3bbcfb43d_1600x1600.webp?alt=media"
+                },
+                "styles": {},
+                "extra": {}
+            }, {
+                "id": "779cd928-de6d-4c1e-9887-80e35f7754a7",
+                "component": "Box",
+                "slots": {
+                    "children1": {
+                        "id": "cc27e0f6-370e-4b19-a566-22b67ba14174",
+                        "blocks": [{
+                            "id": "ca401cf1-dcf0-41a4-bb75-16ff6221bd04",
+                            "component": "Box",
+                            "slots": {
+                                "children1": {
+                                    "id": "c318afe5-43a1-4931-819f-980eb599b81e",
+                                    "blocks": [{
+                                        "id": "e49ad516-08ca-46a3-a6ed-ddafd8744255",
+                                        "component": "Link",
+                                        "slots": {
+                                            "children": {
+                                                "id": "ceb808ae-411b-44c3-a56b-1e00c689d5a8",
+                                                "blocks": [{
+                                                    "id": "0edbe26b-212c-4b8a-90b2-e968b1902af2",
+                                                    "component": "Text",
+                                                    "slots": {},
+                                                    "children": {},
+                                                    "props": {
+                                                        "text": "Learn"
+                                                    },
+                                                    "styles": {
+                                                        "fontSize": "1.875rem",
+                                                        "lineHeight": "2.25rem",
+                                                        "textAlign": "left",
+                                                        "marginBottom": 20
+                                                    },
+                                                    "extra": {
+                                                        "font": {
+                                                            "fontSizeLevel": 4
+                                                        }
+                                                    }
+                                                }, {
+                                                    "id": "6c569ee6-7472-4037-8a63-5a81c27f36be",
+                                                    "component": "Text",
+                                                    "slots": {},
+                                                    "children": {},
+                                                    "props": {
+                                                        "text": "Learn how to master Raber"
+                                                    },
+                                                    "styles": {
+                                                        "fontSize": "1rem",
+                                                        "lineHeight": "1.5rem",
+                                                        "textAlign": "left",
+                                                        "color": "#cbd5e1"
+                                                    },
+                                                    "extra": {
+                                                        "font": {
+                                                            "fontSizeLevel": 1,
+                                                            "color": "slate",
+                                                            "shade": 300
+                                                        }
+                                                    }
+                                                }],
+                                                "props": {},
+                                                "styles": {},
+                                                "extra": {}
+                                            }
+                                        },
+                                        "children": {},
+                                        "props": {
+                                            "href": "https://www.raber.app/docs/why-raber"
+                                        },
+                                        "styles": {
+                                            "display": "flex",
+                                            "flexDirection": "column",
+                                            "alignItems": "center",
+                                            "justifyContent": "center",
+                                            "padding": "1.5rem",
+                                            "borderRadius": "8px",
+                                            "boxShadow": "0 4px 8px rgba(0, 0, 0, 0.1)",
+                                            "backgroundColor": "#fff",
+                                            "transition": "box-shadow 0.2s ease-in-out",
+                                            "paddingLeft": 0,
+                                            "paddingTop": 0
+                                        },
+                                        "extra": {}
+                                    }],
+                                    "props": {},
+                                    "styles": {},
+                                    "extra": {}
+                                }
+                            },
+                            "children": {},
+                            "props": {
+                                "className": "raber-card"
+                            },
+                            "styles": {
+                                "paddingLeft": 25,
+                                "paddingTop": 20,
+                                "paddingBottom": 20,
+                                "paddingRight": 20,
+                                "display": "flex",
+                                "border": "none",
+                                "borderRadius": "4px",
+                                "maxWidth": 305,
+                                "flexGrow": 0,
+                                "flexShrink": 1
+                            },
+                            "extra": {}
+                        }, {
+                            "id": "95e0dee4-d04f-4225-93c8-0bdf17683a41",
+                            "component": "Box",
+                            "slots": {
+                                "children1": {
+                                    "id": "19c3e16c-fed2-4975-836c-311b094197df",
+                                    "blocks": [{
+                                        "id": "ef17068b-82ce-4094-a3e8-56f44a85f3d7",
+                                        "component": "Link",
+                                        "slots": {
+                                            "children": {
+                                                "id": "b637ff0e-1a56-43e4-934b-42098cd87392",
+                                                "blocks": [{
+                                                    "id": "81051366-713a-417a-877c-3eeeaebe272a",
+                                                    "component": "Text",
+                                                    "slots": {},
+                                                    "children": {},
+                                                    "props": {
+                                                        "text": "Raber AI"
+                                                    },
+                                                    "styles": {
+                                                        "fontSize": "1.875rem",
+                                                        "lineHeight": "2.25rem",
+                                                        "textAlign": "left",
+                                                        "marginBottom": 20
+                                                    },
+                                                    "extra": {
+                                                        "font": {
+                                                            "fontSizeLevel": 4
+                                                        }
+                                                    }
+                                                }, {
+                                                    "id": "4ec8b20f-e684-429e-af70-f8414a2161f5",
+                                                    "component": "Text",
+                                                    "slots": {},
+                                                    "children": {},
+                                                    "props": {
+                                                        "text": "Learn how to use Raber Copilot"
+                                                    },
+                                                    "styles": {
+                                                        "fontSize": "1rem",
+                                                        "lineHeight": "1.5rem",
+                                                        "textAlign": "left",
+                                                        "color": "#cbd5e1"
+                                                    },
+                                                    "extra": {
+                                                        "font": {
+                                                            "fontSizeLevel": 1,
+                                                            "color": "slate",
+                                                            "shade": 300
+                                                        }
+                                                    }
+                                                }],
+                                                "props": {},
+                                                "styles": {},
+                                                "extra": {}
+                                            }
+                                        },
+                                        "children": {},
+                                        "props": {
+                                            "href": "https://www.raber.app/docs/raber-copilot"
+                                        },
+                                        "styles": {
+                                            "display": "flex",
+                                            "flexDirection": "column",
+                                            "alignItems": "center",
+                                            "justifyContent": "center",
+                                            "padding": "1.5rem",
+                                            "borderRadius": "8px",
+                                            "boxShadow": "0 4px 8px rgba(0, 0, 0, 0.1)",
+                                            "backgroundColor": "#fff",
+                                            "transition": "box-shadow 0.2s ease-in-out",
+                                            "paddingLeft": 0,
+                                            "paddingTop": 0
+                                        },
+                                        "extra": {}
+                                    }],
+                                    "props": {},
+                                    "styles": {},
+                                    "extra": {}
+                                }
+                            },
+                            "children": {},
+                            "props": {
+                                "className": "raber-card"
+                            },
+                            "styles": {
+                                "paddingLeft": 25,
+                                "paddingTop": 20,
+                                "paddingBottom": 20,
+                                "paddingRight": 20,
+                                "display": "flex",
+                                "border": "none",
+                                "borderRadius": "4px",
+                                "maxWidth": 305
+                            },
+                            "extra": {}
+                        }],
+                        "props": {},
+                        "styles": {},
+                        "extra": {}
+                    }
+                },
+                "children": {},
+                "props": {},
+                "styles": {
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "alignItems": "stretch",
+                    "justifyContent": "flex-start",
+                    "flexWrap": "wrap",
+                    "gap": 28,
+                    "paddingLeft": 40,
+                    "paddingRight": 40
+                },
+                "extra": {
+                    "layout": {
+                        "flow": "row",
+                        "gap": 28
+                    }
+                }
+            }],
+            "props": {},
+            "styles": {},
+            "extra": {}
+        }
+    },
+    "children": {},
+    "props": {},
+    "styles": {
+        "display": "flex",
+        "flexDirection": "column",
+        "alignItems": "stretch",
+        "justifyContent": "flex-start",
+        "flexWrap": "wrap",
+        "gap": 0
+    },
+    "extra": {
+        "layout": {
+            "gap": 0
+        }
+    }
+}
