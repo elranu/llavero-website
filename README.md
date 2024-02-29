@@ -1,43 +1,59 @@
-## Next.js project with Raber integrated
+# Shadcn/UI Landing Page Template
 
-This is a [Next.js](https://nextjs.org/) project with integration with [Raber](https://www.raber.app/)
+## <a href="https://ui.shadcn.com/" target="_blank">ShadcnUI</a> + <a href="https://react.dev/" target="_blank">React</a> + <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a> + <a href="https://tailwindcss.com/" target="_blank">Tailwind</a>.
 
-## Getting Started
+![shadch-landing-page](https://github.com/leoMirandaa/shadcn-landing-page/assets/61714687/3ba7b51f-9589-4541-800a-5ab7cecad1b5)
 
-First, replace the public key with your own key in `pages/_app.tsx`:
+Build your React landing page effortlessly with the required sections to your project. <a href="https://shadcn-landing-page.vercel.app/" target="_blank">Live Demo</a>
 
-```js
-initializeApp({
-  publicKey: '<with your own pub key>'
-})
+## Sections
+
+- [x] Navbar
+- [x] Sidebar(mobile)
+- [x] Hero
+- [x] Sponsors
+- [x] About
+- [x] Stats
+- [x] How It Works
+- [x] Features
+- [x] Services
+- [x] Call-to-Action (CTA)
+- [x] Testimonials
+- [x] Team
+- [x] Pricing
+- [x] Newsletter
+- [x] Frequently Asked Questions(FAQ)
+- [x] Footer
+
+## Features
+
+- [x] Fully Responsive Design
+- [x] User Friendly Navigation
+- [x] Dark Mode
+- [x] Metatags
+
+## How to install
+
+1. Clone this repositoy:
+
+```bash
+git clone https://github.com/leoMirandaa/shadcn-landing-page.git
 ```
 
-You can find public key in the header of the Editor:
+2. Go into project
 
-![Image](https://firebasestorage.googleapis.com/v0/b/react-builder-c9ea4.appspot.com/o/assets%2FZXrA6EruQkdOmZXryEymXDihtSR2%2Fac5b8da3ee5f01b4089bff9572ef081a1e97da7dd2165b161a8ffba9d1cef746_1280x1280.webp?alt=media)
+```bash
+cd shadcn-landing-page
+```
 
-run the development server:
+3. Install dependencies
+
+```bash
+npm install
+```
+
+4. Run project
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-Open [http://localhost:3000/nextjs](http://localhost:3000/nextjs) in [Raber Editor](https://www.raber.app/editor)
-
-You can start editing the page visually in the Raber Editor.
-
-## Learn More
-
-To learn more about Raber, please follow our [official documentation](https://www.raber.app/docs/getting-started).
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
