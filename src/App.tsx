@@ -1,3 +1,4 @@
+import { About } from "./components/About";
 import { Cta } from "./components/Cta";
 import { FAQ } from "./components/FAQ";
 import { Features } from "./components/Features";
@@ -19,19 +20,17 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <Cta />
-      {/* <About /> */}
+      <Sponsors />
+      <About />
       <HowItWorks />
       <Features />
       <Services />
-      <Sponsors />
-
+      <Cta />
       <Testimonials />
       <Team />
       <Pricing />
       <Newsletter />
       <FAQ />
-       <Sponsors />
       <Footer />
       <ScrollToTop />
     </>

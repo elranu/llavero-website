@@ -1,8 +1,9 @@
 {
-  "name": "llavero-web",
-  "author": "Mariano Vicario",
+  "name": "shadcn-landing-page-template",
+  "author": "Leo Miranda",
   "private": true,
   "version": "0.1.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
