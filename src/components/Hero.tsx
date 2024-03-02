@@ -42,10 +42,9 @@ export function AlertDialogDemo(open: boolean) {
 
 
 export const Hero = () => {
-  const [isOpen, setOpen] =  useState<boolean>(true);
+  //const [isOpen, setOpen] =  useState<boolean>(true);
   return (
     <section className="container grid lg:grid-cols-2 place-items-center py-20 md:py-24 gap-10">
-      <AlertDialogDemo open={isOpen} />
       <div className="text-center lg:text-start space-y-6">
         <main className="text-5xl md:text-6xl font-bold">
           <h1>My {" "}</h1>
