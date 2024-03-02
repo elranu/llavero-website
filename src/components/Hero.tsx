@@ -69,7 +69,7 @@ export const Hero = () => {
           Don't loose your keys anymore
         </h2>
 
-        <Button className="w-full md:w-1/3" onClick={() => setOpen(true)}>Play Intro Video</Button>
+        <Button className="w-full md:w-1/3" >Play Intro Video</Button>
       </div>
 
       {/* Hero cards sections */}
