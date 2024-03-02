@@ -1,6 +1,7 @@
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import { MagnifierIcon, WalletIcon, ChartIcon } from "./Icons";
-import cubeLeg from "../assets/cube-leg.png";
+import { MagnifierIcon, ChartIcon } from "./Icons";
+import astronaut from "../assets/astronaut-pointing.svg"
+import bio from "../assets/bio.svg";
 
 interface ServiceProps {
   title: string;
@@ -10,23 +11,29 @@ interface ServiceProps {
 
 const serviceList: ServiceProps[] = [
   {
-    title: "Code Collaboration",
+    title: "MFA ease of use and security (TOTP, Biometrics, email, whitelist,...)",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "IaC security and automation for the end user, without intermediates.",
+    icon: <img src={bio} alt="biometrics" className="h-11 w-12 fill-primary" />,
+  },
+  {
+    title: "User friendly as SaaS",
+    description:
+      "AWS KMS is the hardware wallet that Companies uses such as OpenZeppelin.",
+    icon: <MagnifierIcon />,
+  },
+  {
+    title: "Open-source",
+    description:
+      "Transparency, security, and privacy are the core values of Llavero Wallet. Craft with well-known components, by engineers and architects.",
     icon: <ChartIcon />,
   },
   {
-    title: "Project Management",
+    title: "Next step: censorship resistance.",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    icon: <WalletIcon />,
-  },
-  {
-    title: "Task Automation",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Contributions to fulfill this objective. Feedback at: ",
     icon: <MagnifierIcon />,
-  },
+  }
 ];
 
 export const Services = () => {
@@ -35,15 +42,15 @@ export const Services = () => {
       <div className="grid lg:grid-cols-[1fr,1fr] gap-8 place-items-center">
         <div>
           <h2 className="text-3xl md:text-4xl font-bold">
+          Objective: {" "}
             <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-              Client-Centric{" "}
+              Identity Decentralization 
             </span>
-            Services
+            
           </h2>
 
           <p className="text-muted-foreground text-xl mt-4 mb-8 ">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-            dolor.
+            Llavero Wallet is the first IndentityOps. Decentralizing identity for end-users. 
           </p>
 
           <div className="flex flex-col gap-8">
@@ -66,9 +73,9 @@ export const Services = () => {
         </div>
 
         <img
-          src={cubeLeg}
-          className="w-[300px] md:w-[500px] lg:w-[600px] object-contain"
-          alt="About services"
+          src={astronaut}
+          className="w-[250px] md:w-[450px] lg:w-[550px] object-contain"
+          alt="IndentityOps"
         />
       </div>
     </section>

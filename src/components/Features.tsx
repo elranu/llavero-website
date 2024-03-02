@@ -6,9 +6,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import image from "../assets/growth.png";
-import image3 from "../assets/reflecting.png";
-import image4 from "../assets/looking-ahead.png";
+import dyi from "../assets/dyi.svg";
+import ux from "../assets/easy-user-experience-.svg";
+import vault from "../assets/vault.svg";
 
 interface FeatureProps {
   title: string;
@@ -18,35 +18,35 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
   {
-    title: "Responsive Design",
+    title: "Used by Industry Security Experts",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    image: image4,
+      "OpenZeppelin and unicorns companies use AWS KMS to secure end-user assets.",
+    image: vault,
   },
   {
-    title: "Intuitive user interface",
+    title: "Intuitive user experience as any SaaS",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    image: image3,
+      "But is yours, you have, you hide it, you control it, you recover it.",
+    image: ux,
   },
   {
-    title: "AI-Powered insights",
+    title: "Easy DYI Setup",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    image: image,
+      "Create an personal AWS account, create AWS credentials for the setup and install it :) Forking or with a desktop app.",
+    image: dyi,
   },
 ];
 
 const featureList: string[] = [
-  "Dark/Light theme",
-  "Reviews",
-  "Features",
-  "Pricing",
-  "Contact form",
-  "Our team",
+  "MFA",
+  "User friendly",
+  "Self-custody",
+  "Always recover",
+  "No seed phrase vulnerabilities",
+  "Open-Source",
   "Responsive design",
-  "Newsletter",
-  "Minimalist",
+  "Full privacy",
+  "Hardware encryption",
 ];
 
 export const Features = () => {
