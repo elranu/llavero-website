@@ -44,7 +44,7 @@ export const Services = () => {
           <h2 className="text-3xl md:text-4xl font-bold">
           Objective: {" "}
             <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-              Identity Decentralization 
+              Personal Identity Decentralization 
             </span>
             
           </h2>
@@ -74,7 +74,7 @@ export const Services = () => {
 
         <img
           src={astronaut}
-          className="w-[250px] md:w-[450px] lg:w-[550px] object-contain"
+          className="w-[300px] md:w-[500px] lg:w-[600px] object-contain"
           alt="IndentityOps"
         />
       </div>

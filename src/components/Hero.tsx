@@ -1,49 +1,64 @@
 import { Button } from "./ui/button";
 //import { buttonVariants } from "./ui/button";
-import { HeroCards } from "./HeroCards";
 //import { GitHubLogoIcon } from "@radix-ui/react-icons";
+import astronaut from "../assets/astronout-play.svg";
+import intro from "../assets/v3.mp4";
 import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-} from "./ui/dialog";
+  Dialog,
+  DialogClose,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import { useEffect, useState } from "react";
 
-export function AlertDialogDemo(open: boolean) {
-  const [isOpen, setOpen] =  useState<boolean>(open);
+interface DialogProps {
+  open?: boolean;
+  onOpenChange?(open: boolean): void;
+}
+
+export function DialogDemo(props: DialogProps): JSX.Element {
+  const [isOpen, setOpen] =  useState<boolean>();
   
   useEffect(() => {
+    setOpen(props.open || false);
+  }, [props.open]);
+
+  const onOpenChange = (open: boolean) => {
     setOpen(open);
-  }, [open]);
+    props.onOpenChange?.(open);
+  }
   
   return (
-    <AlertDialog open={isOpen} onOpenChange={setOpen}>
-      <AlertDialogContent>
-        <AlertDialogHeader>
-          <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
-          <AlertDialogDescription>
-            This action cannot be undone. This will permanently delete your
-            account and remove your data from our servers.
-          </AlertDialogDescription>
-        </AlertDialogHeader>
-        <AlertDialogFooter>
-          <AlertDialogCancel>Cancel</AlertDialogCancel>
-          <AlertDialogAction>Continue</AlertDialogAction>
-        </AlertDialogFooter>
-      </AlertDialogContent>
-    </AlertDialog>
+    <Dialog open={isOpen} onOpenChange={onOpenChange}>
+      <DialogTrigger />
+      <DialogContent className="sm:max-w-[650px]">
+        <DialogHeader>
+          <DialogTitle>Llavero</DialogTitle>
+          <DialogDescription />
+        </DialogHeader>
+        <div className="grid gap-4 py-4">
+          <video controls className="w-full" autoPlay={isOpen}>
+            <source src={intro} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <DialogFooter  />
+      </DialogContent>
+    </Dialog>
   )
 }
 
 
+
 export const Hero = () => {
-  //const [isOpen, setOpen] =  useState<boolean>(true);
+  const [isOpen, setOpen] =  useState<boolean>();
+  
   return (
+  <>
     <section className="container grid lg:grid-cols-2 place-items-center py-20 md:py-24 gap-10">
       <div className="text-center lg:text-start space-y-6">
         <main className="text-5xl md:text-6xl font-bold">
@@ -57,7 +72,6 @@ export const Hero = () => {
           as {" "}
           </h1>
           <h2 className="inline">
-
             <span className="inline bg-gradient-to-r from-[#F596D3]  to-[#D247BF] text-transparent bg-clip-text">
               MY
             </span>{" "}
@@ -69,16 +83,21 @@ export const Hero = () => {
           Don't loose your keys anymore
         </h2>
 
-        <Button className="w-full md:w-1/3" >Play Intro Video</Button>
+        <Button className="w-full md:w-1/3" onClick={()=> setOpen(true)}>Play Intro Video</Button>
       </div>
 
       {/* Hero cards sections */}
       <div className="z-10">
-        <HeroCards />
+        <div className="hidden lg:flex flex-row flex-wrap gap-8 relative w-[700px] h-[500px]">
+          <img src={astronaut} alt="astronaut" onClick={()=> setOpen(true)} className="play-video" />
+        </div>
       </div>
 
       {/* Shadow effect */}
       <div className="shadow"></div>
     </section>
+    <DialogDemo open={isOpen} onOpenChange={setOpen}/>
+    
+  </>
   );
 };

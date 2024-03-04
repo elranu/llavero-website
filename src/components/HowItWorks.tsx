@@ -10,27 +10,27 @@ interface FeatureProps {
 const features: FeatureProps[] = [
   {
     icon: <MedalIcon />,
-    title: "Accesibility",
+    title: "AWS Account",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "Create your personal AWS Account. Follow this steps.",
   },
   {
     icon: <MapIcon />,
-    title: "Community",
+    title: "Create AWS Credentials",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "Create AWS credentials requiered by Llavero's Installer. Follow this steps.",
   },
   {
     icon: <PlaneIcon />,
-    title: "Scalability",
+    title: "Installer",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "Download the installer for Linux, MacOS or Windows. Put your AWS credentials and install it.",
   },
   {
     icon: <GiftIcon />,
-    title: "Gamification",
+    title: "Fork + Github Actions",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas provident cum",
+      "Fork Llavero's repository, setup Github's secrets and run the Github Actions.",
   },
 ];
 
@@ -48,7 +48,8 @@ export const HowItWorks = () => {
         Step-by-Step Guide
       </h2>
       <p className="md:w-3/4 mx-auto mt-4 mb-8 text-xl text-muted-foreground">
-        Install Llavero on your personal AWS Account. Taking advantage of their great free tier.
+        Install Llavero on your personal AWS Account. Taking advantage of their great free tier. <br />
+        Llavero can be installed with the app Installer, in their respective OS. Or with Github Actions on your forked repository. 
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

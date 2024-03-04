@@ -16,6 +16,10 @@ html {
   animation: shadow-slide infinite 4s linear alternate;
 }
 
+.play-video {
+  cursor: pointer;
+}
+
 @keyframes shadow-slide {
   from {
     background: hsl(var(--primary) / 20%);

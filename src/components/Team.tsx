@@ -54,31 +54,6 @@ const teamList: TeamProps[] = [
       },
     ],
   },
-  {
-    imageUrl: "https://i.pravatar.cc/150?img=36",
-    name: "Ashley Ross",
-    position: "Frontend Developer",
-    socialNetworks: [
-      { name: "Linkedin", url: "http://linkedin.com" },
-
-      {
-        name: "Instagram",
-        url: "https://www.instagram.com/",
-      },
-    ],
-  },
-  {
-    imageUrl: "https://i.pravatar.cc/150?img=17",
-    name: "Bruce Rogers",
-    position: "Backend Developer",
-    socialNetworks: [
-      { name: "Linkedin", url: "http://linkedin.com" },
-      {
-        name: "Facebook",
-        url: "https://www.facebook.com/",
-      },
-    ],
-  },
 ];
 
 export const Team = () => {
