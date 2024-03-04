@@ -13,8 +13,10 @@ import { Services } from "./components/Services";
 import { Team } from "./components/Team";
 //import { Testimonials } from "./components/Testimonials";
 import "./App.css";
+import { inject } from "@vercel/analytics"
 
 function App() {
+  inject()
   return (
     <>
       <Navbar />
