@@ -18,7 +18,7 @@ const features: FeatureProps[] = [
     icon: <MapIcon />,
     title: "Create AWS Credentials",
     description:
-      "Create AWS credentials requiered by Llavero's Installer. Follow this steps.",
+      "Create AWS credentials required by Llavero's Installer. Follow this steps.",
   },
   {
     icon: <PlaneIcon />,
