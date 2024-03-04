@@ -5,7 +5,6 @@ import astronaut from "../assets/astronout-play.svg";
 import intro from "../assets/v3.mp4";
 import {
   Dialog,
-  DialogClose,
   DialogContent,
   DialogDescription,
   DialogFooter,
