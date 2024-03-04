@@ -20,9 +20,11 @@ function App() {
       <Navbar />
       <Hero />
       {/* <About /> */}
+      
+      <Features />
+
       <HowItWorks />
       <Cta />
-      <Features />
       <Services />
       {/* <Sponsors /> */}
 

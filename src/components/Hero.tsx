@@ -96,7 +96,6 @@ export const Hero = () => {
       <div className="shadow"></div>
     </section>
     <DialogDemo open={isOpen} onOpenChange={setOpen}/>
-    
   </>
   );
 };
