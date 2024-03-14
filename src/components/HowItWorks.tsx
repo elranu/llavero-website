@@ -1,5 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { MedalIcon, MapIcon, PlaneIcon, GiftIcon } from "../components/Icons";
+import aws from "../assets/cloud2.svg";
+import credentials from "../assets/credentials.svg";
+import installer from "../assets/installer.svg";
+import fork from "../assets/fork.svg";
 
 interface FeatureProps {
   icon: JSX.Element;
@@ -9,25 +12,25 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
   {
-    icon: <MedalIcon />,
+    icon: <img src={aws} style={{ height: "80px" }} />,
     title: "AWS Account",
     description:
       "Create your personal AWS Account. Follow this steps.",
   },
   {
-    icon: <MapIcon />,
+    icon: <img src={credentials} style={{ height: "80px" }} />,
     title: "Create AWS Credentials",
     description:
       "Create AWS credentials required by Llavero's Installer. Follow this steps.",
   },
   {
-    icon: <PlaneIcon />,
+    icon: <img src={installer} style={{ height: "80px" }} />,
     title: "Installer",
     description:
       "Download the installer for Linux, MacOS or Windows. Put your AWS credentials and install it.",
   },
   {
-    icon: <GiftIcon />,
+    icon: <img src={fork} style={{ height: "80px" }} />,
     title: "Fork + Github Actions",
     description:
       "Fork Llavero's repository, setup Github's secrets and run the Github Actions.",

@@ -1,7 +1,9 @@
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
-import { MagnifierIcon, ChartIcon } from "./Icons";
 import astronaut from "../assets/astronaut-pointing.svg"
-import bio from "../assets/bio.svg";
+import bio from "../assets/identity.svg";
+import saas from "../assets/saas.svg";
+import opensource from "../assets/open-source.svg";
+import nextsteps from "../assets/next-steps.svg";
 
 interface ServiceProps {
   title: string;
@@ -14,25 +16,25 @@ const serviceList: ServiceProps[] = [
     title: "MFA ease of use and security (TOTP, Biometrics, email, whitelist,...)",
     description:
       "IaC security and automation for the end user, without intermediates.",
-    icon: <img src={bio} alt="biometrics" className="h-11 w-12 fill-primary" />,
+    icon: <img src={bio} alt="biometrics" className="h-11 w-12" />,
   },
   {
     title: "User friendly as SaaS",
     description:
       "AWS KMS is the hardware wallet that Companies uses such as OpenZeppelin.",
-    icon: <MagnifierIcon />,
+    icon: <img src={saas} alt="biometrics" className="h-11" />,
   },
   {
     title: "Open-source",
     description:
       "Transparency, security, and privacy are the core values of Llavero Wallet. Craft with well-known components, by engineers and architects.",
-    icon: <ChartIcon />,
+    icon: <img src={opensource} alt="biometrics" className="h-11" />,
   },
   {
     title: "Next step: censorship resistance.",
     description:
       "Contributions to fulfill this objective. Feedback at: ",
-    icon: <MagnifierIcon />,
+    icon: <img src={nextsteps} alt="biometrics" className="h-11" />,
   }
 ];
 

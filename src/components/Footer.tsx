@@ -1,4 +1,4 @@
-import { LogoIcon } from "./Icons";
+import logo from "../assets/llavero-logo-2.svg";
 
 export const Footer = () => {
   return (
@@ -11,8 +11,8 @@ export const Footer = () => {
             href="/"
             className="font-bold text-xl flex"
           >
-            <LogoIcon />
-            ShadcnUI/React
+             <img src={logo} alt="astronaut" className="h-10"/>
+            Llavero Wallet
           </a>
         </div>
 
@@ -139,14 +139,7 @@ export const Footer = () => {
 
       <section className="container pb-14 text-center">
         <h3>
-          &copy; 2024 Landing page made by{" "}
-          <a
-            target="_blank"
-            href="https://github.com/leoMirandaa"
-            className="text-primary transition-all border-primary hover:border-b-2"
-          >
-            Leo Miranda
-          </a>
+          &copy; 2024 Llavero Wallet {" "}
         </h3>
       </section>
     </footer>

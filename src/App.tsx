@@ -1,5 +1,5 @@
 import { Cta } from "./components/Cta";
-import { FAQ } from "./components/FAQ";
+//import { FAQ } from "./components/FAQ";
 import { Features } from "./components/Features";
 import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
@@ -10,7 +10,7 @@ import { Newsletter } from "./components/Newsletter";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { Services } from "./components/Services";
 //import { Sponsors } from "./components/Sponsors";
-import { Team } from "./components/Team";
+//import { Team } from "./components/Team";
 //import { Testimonials } from "./components/Testimonials";
 import "./App.css";
 import { inject } from "@vercel/analytics"
@@ -31,10 +31,10 @@ function App() {
       {/* <Sponsors /> */}
 
       {/* <Testimonials /> */}
-      <Team />
+      {/* <Team /> */}
       {/* <Pricing /> */}
       <Newsletter />
-      <FAQ />
+      {/* <FAQ /> */}
       <Footer />
       <ScrollToTop />
     </>
