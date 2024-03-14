@@ -1,6 +1,6 @@
 # Llavero Wallet: Landing Page Template
 
-<img src="src/assets/llavero-logo-2.svg" alt="Your Image" style="max-height: 100px;">
+<img src="src/assets/llavero-logo-2.svg" alt="Llavero Wallet" style="height: 100px; ">
 
 
 
