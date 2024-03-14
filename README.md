@@ -1,6 +1,8 @@
 # Llavero Wallet: Landing Page Template
 
-![Llavero Wallet](src/assets/llavero-logo-2.svg)
+<img src="src/assets/llavero-logo-2.svg" alt="Your Image" style="max-height: 100px;">
+
+
 
 [LLavero Wallet Repo](https://github.com/elranu/llavero) 
 
