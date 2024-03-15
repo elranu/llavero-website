@@ -10,7 +10,7 @@ import { Newsletter } from "./components/Newsletter";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { Services } from "./components/Services";
 //import { Sponsors } from "./components/Sponsors";
-//import { Team } from "./components/Team";
+import { Team } from "./components/Team";
 //import { Testimonials } from "./components/Testimonials";
 import "./App.css";
 import { inject } from "@vercel/analytics"
@@ -31,7 +31,7 @@ function App() {
       {/* <Sponsors /> */}
 
       {/* <Testimonials /> */}
-      {/* <Team /> */}
+      <Team /> 
       {/* <Pricing /> */}
       <Newsletter />
       {/* <FAQ /> */}

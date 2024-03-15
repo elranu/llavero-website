@@ -87,7 +87,7 @@ export const Hero = () => {
 
       {/* Hero cards sections */}
       <div className="z-10">
-        <div className="hidden lg:flex flex-row flex-wrap gap-8 relative w-[700px] h-[500px]">
+        <div className="hidden lg:flex flex-row flex-wrap gap-8 relative w-[700px]">
           <img src={astronaut} alt="astronaut" onClick={()=> setOpen(true)} className="play-video" />
         </div>
       </div>
