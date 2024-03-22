@@ -14,6 +14,7 @@ import { Team } from './components/Team';
 //import { Testimonials } from "./components/Testimonials";
 import './App.css';
 import { inject } from '@vercel/analytics';
+import StarUsOnGitHub from './components/StarUsOnGitHub';
 
 function App() {
   inject();
@@ -37,6 +38,7 @@ function App() {
       {/* <FAQ /> */}
       <Footer />
       <ScrollToTop />
+      <StarUsOnGitHub />
     </>
   );
 }

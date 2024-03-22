@@ -4,12 +4,23 @@ import credentials from '../assets/credentials.svg';
 import installer from '../assets/installer.svg';
 import fork from '../assets/fork.svg';
 import { Button } from './ui/button';
+import { useState } from 'react';
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from './ui/dialog';
 
 interface FeatureProps {
   icon: JSX.Element;
   title: string;
   description: string;
-  button: JSX.Element;
+  button?: JSX.Element;
+  dialog: JSX.Element;
 }
 
 const features: FeatureProps[] = [
@@ -17,64 +28,228 @@ const features: FeatureProps[] = [
     icon: <img src={aws} style={{ height: '80px' }} />,
     title: 'AWS Account',
     description: 'Create your personal AWS Account. Follow this steps.',
-    button: <Button>Watch</Button>,
+    dialog: <AwsAccountDialog />,
   },
   {
     icon: <img src={credentials} style={{ height: '80px' }} />,
     title: 'Create AWS Credentials',
     description: "Create AWS credentials required by Llavero's Installer. Follow this steps.",
-    button: <Button>Watch</Button>,
+    dialog: <AwsCredentialsDialog />,
   },
   {
     icon: <img src={installer} style={{ height: '80px' }} />,
     title: 'Installer',
     description:
       'Download the installer for Linux, MacOS or Windows. Put your AWS credentials and install it.',
-    button: <Button>Download</Button>,
+    dialog: <InstallerDialog />,
   },
   {
     icon: <img src={fork} style={{ height: '80px' }} />,
     title: 'Fork + Github Actions',
     description: "Fork Llavero's repository, setup Github's secrets and run the Github Actions.",
     button: <Button>Fork</Button>,
+    dialog: <GithubDialog />,
   },
 ];
 
 export const HowItWorks = () => {
   return (
-    <section id='howItWorks' className='container text-center py-20'>
-      <h2 className='text-3xl md:text-4xl font-bold '>
+    <section id='howItWorks' className='container py-20 text-center'>
+      <h2 className='text-3xl font-bold md:text-4xl '>
         How It{' '}
-        <span className='bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text'>
+        <span className='text-transparent bg-gradient-to-b from-primary/60 to-primary bg-clip-text'>
           Works{' '}
         </span>
         Step-by-Step Guide
       </h2>
-      <p className='md:w-3/4 mx-auto mt-4 mb-8 text-xl text-muted-foreground'>
+      <p className='mx-auto mt-4 mb-8 text-xl md:w-3/4 text-muted-foreground'>
         Install <strong>Llavero</strong> on your personal AWS Account. Taking advantage of their
         great free tier. <br />
         <strong>Llavero</strong> can be installed with the app Installer, in their respective OS or
         with Github Actions on your forked repository.
       </p>
+      <div className='grid lg:grid-cols-[auto,auto] gap-8 justify-center'>
+        <Card className='w-[500px] bg-muted/50 relative'>
+          <CardHeader>
+            <CardTitle className='grid gap-4 place-items-center'>
+              {features[0].icon}
+              {features[0].title}
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className='flex flex-col gap-4'>
+              {features[0].description}
+              {features[0].dialog}
+            </div>
+          </CardContent>
+          <span className='absolute text-5xl font-bold text-transparent top-2 left-3 bg-gradient-to-b from-primary/60 to-primary bg-clip-text'>
+            1
+          </span>
+        </Card>
 
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
-        {features.map(({ icon, title, description, button }: FeatureProps) => (
-          <Card key={title} className='bg-muted/50'>
-            <CardHeader>
-              <CardTitle className='grid gap-4 place-items-center'>
-                {icon}
-                {title}
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className='flex flex-col gap-4'>
-                {description}
-                <div>{button}</div>
-              </div>
-            </CardContent>
-          </Card>
-        ))}
+        <Card className='w-[500px] bg-muted/50 relative'>
+          <CardHeader>
+            <CardTitle className='grid gap-4 place-items-center'>
+              {features[1].icon}
+              {features[1].title}
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className='flex flex-col gap-4'>
+              {features[1].description}
+              {features[1].dialog}
+            </div>
+          </CardContent>
+          <span className='absolute text-5xl font-bold text-transparent top-2 left-3 bg-gradient-to-b from-primary/60 to-primary bg-clip-text'>
+            2
+          </span>
+        </Card>
+      </div>
+      <div className='flex items-center justify-center gap-2 text-muted-foreground'>
+        <hr className='w-1/4 my-8 ' /> Select one <hr className='w-1/4 my-8 ' />
+      </div>
+
+      <div className='grid lg:grid-cols-[auto,auto] gap-8 mb-8 justify-center'>
+        <Card className='w-[500px] bg-muted/50 relative'>
+          <CardHeader>
+            <CardTitle className='grid gap-4 place-items-center'>
+              {features[2].icon}
+              {features[2].title}
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className='flex flex-col gap-4'>
+              {features[2].description}
+              {features[2].dialog}
+            </div>
+          </CardContent>
+          <span className='absolute text-5xl font-bold text-transparent top-2 left-3 bg-gradient-to-b from-primary/60 to-primary bg-clip-text'>
+            3
+          </span>
+        </Card>
+
+        <Card className='w-[500px] bg-muted/50 relative'>
+          <CardHeader>
+            <CardTitle className='grid gap-4 place-items-center'>
+              {features[3].icon}
+              {features[3].title}
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className='flex flex-col gap-4'>
+              {features[3].description}
+              {features[3].dialog}
+            </div>
+          </CardContent>
+          <span className='absolute text-5xl font-bold text-transparent top-2 left-3 bg-gradient-to-b from-primary/60 to-primary bg-clip-text'>
+            3
+          </span>
+        </Card>
       </div>
     </section>
   );
 };
+
+export function AwsAccountDialog(): JSX.Element {
+  const [isOpen, setOpen] = useState<boolean>(false);
+  const onOpenChange = () => setOpen(!isOpen);
+
+  return (
+    <Dialog open={isOpen} onOpenChange={onOpenChange}>
+      <DialogTrigger asChild>
+        <Button className='mx-auto w-fit'>Start</Button>
+      </DialogTrigger>
+      <DialogContent className={'lg:max-w-screen-lg overflow-y-auto max-h-[90vh]'}>
+        <DialogHeader>
+          <DialogTitle>AWS Account</DialogTitle>
+          <DialogDescription />
+        </DialogHeader>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorum sunt animi enim
+          asperiores voluptates saepe eum officiis sed alias! Ipsum expedita quaerat saepe
+          repudiandae, deleniti dignissimos cumque optio! Consectetur!
+        </div>
+
+        <DialogFooter />
+      </DialogContent>
+    </Dialog>
+  );
+}
+
+export function AwsCredentialsDialog(): JSX.Element {
+  const [isOpen, setOpen] = useState<boolean>(false);
+  const onOpenChange = () => setOpen(!isOpen);
+
+  return (
+    <Dialog open={isOpen} onOpenChange={onOpenChange}>
+      <DialogTrigger asChild>
+        <Button className='mx-auto w-fit'>Start</Button>
+      </DialogTrigger>
+      <DialogContent className={'lg:max-w-screen-lg overflow-y-auto max-h-[90vh]'}>
+        <DialogHeader>
+          <DialogTitle>Create AWS Credentials</DialogTitle>
+          <DialogDescription />
+        </DialogHeader>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorum sunt animi enim
+          asperiores voluptates saepe eum officiis sed alias! Ipsum expedita quaerat saepe
+          repudiandae, deleniti dignissimos cumque optio! Consectetur!
+        </div>
+
+        <DialogFooter />
+      </DialogContent>
+    </Dialog>
+  );
+}
+
+export function InstallerDialog(): JSX.Element {
+  const [isOpen, setOpen] = useState<boolean>(false);
+  const onOpenChange = () => setOpen(!isOpen);
+
+  return (
+    <Dialog open={isOpen} onOpenChange={onOpenChange}>
+      <DialogTrigger asChild>
+        <Button className='mx-auto w-fit'>Download</Button>
+      </DialogTrigger>
+      <DialogContent className={'lg:max-w-screen-lg overflow-y-auto max-h-[90vh]'}>
+        <DialogHeader>
+          <DialogTitle>Installer</DialogTitle>
+          <DialogDescription />
+        </DialogHeader>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorum sunt animi enim
+          asperiores voluptates saepe eum officiis sed alias! Ipsum expedita quaerat saepe
+          repudiandae, deleniti dignissimos cumque optio! Consectetur!
+        </div>
+
+        <DialogFooter />
+      </DialogContent>
+    </Dialog>
+  );
+}
+
+export function GithubDialog(): JSX.Element {
+  const [isOpen, setOpen] = useState<boolean>(false);
+  const onOpenChange = () => setOpen(!isOpen);
+
+  return (
+    <Dialog open={isOpen} onOpenChange={onOpenChange}>
+      <DialogTrigger asChild>
+        <Button className='mx-auto w-fit'>Fork</Button>
+      </DialogTrigger>
+      <DialogContent className={'lg:max-w-screen-lg overflow-y-auto max-h-[90vh]'}>
+        <DialogHeader>
+          <DialogTitle>Fork + Github Actions</DialogTitle>
+          <DialogDescription />
+        </DialogHeader>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorum sunt animi enim
+          asperiores voluptates saepe eum officiis sed alias! Ipsum expedita quaerat saepe
+          repudiandae, deleniti dignissimos cumque optio! Consectetur!
+        </div>
+
+        <DialogFooter />
+      </DialogContent>
+    </Dialog>
+  );
+}

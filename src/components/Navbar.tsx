@@ -25,9 +25,12 @@ export const Navbar = () => {
     <header className='sticky border-b-[1px] top-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-background'>
       <NavigationMenu className='mx-auto'>
         <NavigationMenuList className='container h-14 px-4 w-screen flex justify-between '>
-          <NavigationMenuItem className='font-bold h-10 flex '>
-            <a href='/' className='font-bold text-xl flex items-center gap-2'>
-              <img src={logo} alt='llavero logo' className='h-10' /> Llavero
+          <NavigationMenuItem className='h-10 flex '>
+            <a href='/' className='text-xl flex items-center gap-2'>
+              <img src={logo} alt='llavero logo' className='h-10' />{' '}
+              <p>
+                <strong>Llavero</strong> Wallet
+              </p>
             </a>
           </NavigationMenuItem>
 

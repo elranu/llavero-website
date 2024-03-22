@@ -13,7 +13,7 @@ interface ServiceProps {
 
 const serviceList: ServiceProps[] = [
   {
-    title: 'MFA ease of use and security (TOTP, Biometrics, email, whitelist,...)',
+    title: 'MFA ease of use and security (TOTP, Biometrics, email, whitelist...)',
     description: 'IaC security and automation for the end user, without intermediates.',
     icon: <img src={bio} alt='biometrics' className='w-10' />,
   },
@@ -29,8 +29,9 @@ const serviceList: ServiceProps[] = [
     icon: <img src={opensource} alt='open source' className='w-10' />,
   },
   {
-    title: 'Next step: censorship resistance.',
-    description: 'Contributions to fulfill this objective. Feedback at: ',
+    title: 'Next step: censorship resistance',
+    description:
+      'Contributions to fulfill this objective. Feedback at: Cloud agnostic, multi-cloud MPC, on-hardware',
     icon: <img src={nextsteps} alt='next steps' className='w-10' />,
   },
 ];
