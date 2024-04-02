@@ -33,7 +33,7 @@ const teamList: TeamProps[] = [
       { name: 'Linkedin', url: 'https://www.linkedin.com/in/mvicario/' },
       {
         name: 'X',
-        url: 'https://www.twitter.com/',
+        url: 'https://www.x.com/el_ranu',
       },
       {
         name: 'Github',

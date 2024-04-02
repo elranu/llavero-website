@@ -1,17 +1,6 @@
-# [Signing up for Amazon Web Services](https://app.tango.us/app/workflow/89a14a59-d115-433a-9247-62f135d21e7b?utm_source=markdown&utm_medium=markdown&utm_campaign=workflow%20export%20links)
+## Create a AWS Account
 
-__Creation Date:__ March 23, 2024  
-__Created By:__ Mariano Vicario  
-[View most recent version on Tango.us](https://app.tango.us/app/workflow/89a14a59-d115-433a-9247-62f135d21e7b?utm_source=markdown&utm_medium=markdown&utm_campaign=workflow%20export%20links)
-
-
-
-***
-
-
-
-
-## # [Amazon Web Services, Inc.](https://aws.amazon.com/)
+### [Go to AWS](https://aws.amazon.com/)
 
 
 ### 1. Click on Sign In to the Console
@@ -95,8 +84,3 @@ Then continue to step 2.
 
 ### 16. Congratulations you created successfully your AWS account :)
 ![Step 16 screenshot](https://images.tango.us/workflows/89a14a59-d115-433a-9247-62f135d21e7b/steps/5dd814b1-a668-44f9-965d-4f419f7fc441/42023e01-9733-4355-89c2-16039aa4761a.png?crop=focalpoint&fit=crop&fp-x=0.9713&fp-y=0.0265&fp-z=2.8951&w=1200&border=2%2CF4F2F7&border-radius=8%2C8%2C8%2C8&border-radius-inner=8%2C8%2C8%2C8&blend-align=bottom&blend-mode=normal&blend-x=0&blend-w=1200&blend64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL21hZGUtd2l0aC10YW5nby13YXRlcm1hcmstdjIucG5n&mark-x=1022&mark-y=8&m64=aHR0cHM6Ly9pbWFnZXMudGFuZ28udXMvc3RhdGljL2JsYW5rLnBuZz9tYXNrPWNvcm5lcnMmYm9yZGVyPTYlMkNGRjc0NDImdz0xNTcmaD05MSZmaXQ9Y3JvcCZjb3JuZXItcmFkaXVzPTEw)
-
-<br/>
-
-***
-Created with [Tango.us](https://tango.us?utm_source=markdown&utm_medium=markdown&utm_campaign=workflow%20export%20links)
