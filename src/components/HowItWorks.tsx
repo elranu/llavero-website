@@ -4,16 +4,10 @@ import credentials from '../assets/credentials.svg';
 import installer from '../assets/installer.svg';
 import fork from '../assets/fork.svg';
 import { Button } from './ui/button';
-import { useState } from 'react';
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from './ui/dialog';
+import { AwsAccountDialog } from './dialogs/AwsAccountDialog';
+import { AwsCredentialsDialog } from './dialogs/AwsCredentialsDialog';
+import { InstallerDialog } from './dialogs/InstallerDialog';
+import { GithubDialog } from './dialogs/GithubDialog';
 
 interface FeatureProps {
   icon: JSX.Element;
@@ -149,107 +143,3 @@ export const HowItWorks = () => {
     </section>
   );
 };
-
-export function AwsAccountDialog(): JSX.Element {
-  const [isOpen, setOpen] = useState<boolean>(false);
-  const onOpenChange = () => setOpen(!isOpen);
-
-  return (
-    <Dialog open={isOpen} onOpenChange={onOpenChange}>
-      <DialogTrigger asChild>
-        <Button className='mx-auto w-fit'>Start</Button>
-      </DialogTrigger>
-      <DialogContent className={'lg:max-w-screen-lg overflow-y-auto max-h-[90vh]'}>
-        <DialogHeader>
-          <DialogTitle>AWS Account</DialogTitle>
-          <DialogDescription />
-        </DialogHeader>
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorum sunt animi enim
-          asperiores voluptates saepe eum officiis sed alias! Ipsum expedita quaerat saepe
-          repudiandae, deleniti dignissimos cumque optio! Consectetur!
-        </div>
-
-        <DialogFooter />
-      </DialogContent>
-    </Dialog>
-  );
-}
-
-export function AwsCredentialsDialog(): JSX.Element {
-  const [isOpen, setOpen] = useState<boolean>(false);
-  const onOpenChange = () => setOpen(!isOpen);
-
-  return (
-    <Dialog open={isOpen} onOpenChange={onOpenChange}>
-      <DialogTrigger asChild>
-        <Button className='mx-auto w-fit'>Start</Button>
-      </DialogTrigger>
-      <DialogContent className={'lg:max-w-screen-lg overflow-y-auto max-h-[90vh]'}>
-        <DialogHeader>
-          <DialogTitle>Create AWS Credentials</DialogTitle>
-          <DialogDescription />
-        </DialogHeader>
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorum sunt animi enim
-          asperiores voluptates saepe eum officiis sed alias! Ipsum expedita quaerat saepe
-          repudiandae, deleniti dignissimos cumque optio! Consectetur!
-        </div>
-
-        <DialogFooter />
-      </DialogContent>
-    </Dialog>
-  );
-}
-
-export function InstallerDialog(): JSX.Element {
-  const [isOpen, setOpen] = useState<boolean>(false);
-  const onOpenChange = () => setOpen(!isOpen);
-
-  return (
-    <Dialog open={isOpen} onOpenChange={onOpenChange}>
-      <DialogTrigger asChild>
-        <Button className='mx-auto w-fit'>Download</Button>
-      </DialogTrigger>
-      <DialogContent className={'lg:max-w-screen-lg overflow-y-auto max-h-[90vh]'}>
-        <DialogHeader>
-          <DialogTitle>Installer</DialogTitle>
-          <DialogDescription />
-        </DialogHeader>
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorum sunt animi enim
-          asperiores voluptates saepe eum officiis sed alias! Ipsum expedita quaerat saepe
-          repudiandae, deleniti dignissimos cumque optio! Consectetur!
-        </div>
-
-        <DialogFooter />
-      </DialogContent>
-    </Dialog>
-  );
-}
-
-export function GithubDialog(): JSX.Element {
-  const [isOpen, setOpen] = useState<boolean>(false);
-  const onOpenChange = () => setOpen(!isOpen);
-
-  return (
-    <Dialog open={isOpen} onOpenChange={onOpenChange}>
-      <DialogTrigger asChild>
-        <Button className='mx-auto w-fit'>Fork</Button>
-      </DialogTrigger>
-      <DialogContent className={'lg:max-w-screen-lg overflow-y-auto max-h-[90vh]'}>
-        <DialogHeader>
-          <DialogTitle>Fork + Github Actions</DialogTitle>
-          <DialogDescription />
-        </DialogHeader>
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorum sunt animi enim
-          asperiores voluptates saepe eum officiis sed alias! Ipsum expedita quaerat saepe
-          repudiandae, deleniti dignissimos cumque optio! Consectetur!
-        </div>
-
-        <DialogFooter />
-      </DialogContent>
-    </Dialog>
-  );
-}
