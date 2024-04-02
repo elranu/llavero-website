@@ -1,12 +1,5 @@
-Guide with Amazon.com
-=====================
+## Guide to create AWS Credentials for Llavero
 
-* * *
-
-*   Created by Mariano Vicario on 3/23/2024
-*   [Edit original on dubble](https://dubble.so/guides/guide-with-amazoncom-lc2uphbfvsr5utmm76mt)
-
-* * *
 
 <video controls=""><source src="https://dubble.so/media/video/77cab964-9a5d-473c-8225-f0f1133c9d10" type="video/mp4"></video>
 

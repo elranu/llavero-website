@@ -1,6 +1,4 @@
 import { Button } from './ui/button';
-//import { buttonVariants } from "./ui/button";
-//import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import astronaut from '../assets/astronout-play.svg';
 import intro from '../assets/v3.mp4';
 import {
