@@ -128,6 +128,7 @@ export function GithubDialog(): JSX.Element {
                                 <li>2. AWS_SECRET_ACCESS_KEY : the created Secret Key </li>
                                 <li>3. EMAIL : the email for account recovery and login.</li>
                                 <li>4. REGION : us-east-1</li>
+                                <li>5. NUMBER_OF_KEYS (optional default: 1): The number of KMS to be created</li>
                             </ul>
 
                         <br />
