@@ -54,9 +54,9 @@ export const Hero = () => {
 
   return (
     <>
-      <section className='container grid lg:grid-cols-2 place-items-center py-10 gap-10 px-6 md:px-12 lg:px-20 justify-center'>
-        <div className='text-center lg:text-start space-y-6'>
-          <main className='text-5xl md:text-6xl font-bold'>
+      <section className='container grid justify-center gap-10 px-6 py-28 lg:grid-cols-2 place-items-center md:px-12 lg:px-20'>
+        <div className='space-y-6 text-center lg:text-start'>
+          <main className='text-5xl font-bold md:text-6xl'>
             <h1>My </h1>
             <h1 className='inline'>
               <span className='inline bg-gradient-to-r from-[#61DAFB] via-[#1fc0f1] to-[#03a3d7] text-transparent bg-clip-text'>
@@ -74,29 +74,38 @@ export const Hero = () => {
 
           <div>
             <h2 className='text-2xl md:text-2xl'>Don't loose your keys anymore.</h2>
-            <p className='text-muted-foreground'>
-              Secure Your Crypto with <strong>Llavero</strong> - Start Safeguarding Your Assets Now!
-            </p>
-          </div>
-
-          <div className='flex flex-col gap-2'>
             <p>
               Discover the Power of <strong>Llavero</strong>:
             </p>
-            <div className='flex gap-2 justify-center lg:justify-start'>
-              <Button className='w-auto' asChild>
-                <a href='#howItWorks'> Get Started Now!</a>
-              </Button>
-              <Button variant='secondary' className='w-auto' onClick={() => setOpen(true)}>
-                Watch Now
-              </Button>
+          </div>
+
+          <div className='flex flex-col gap-x-8 gap-y-4 md:flex-row md:items-end'>
+            <div>
+              <p className='text-lg'>
+                <strong>One</strong> minute intro video:
+              </p>
+              <div className='flex justify-center gap-2 mb-2 lg:justify-start'>
+                <Button size='lg' className='w-auto text-xl' onClick={() => setOpen(true)}>
+                  Watch Now
+                </Button>
+              </div>
+            </div>
+            <div>
+              <p className='text-lg'>
+                <strong></strong>
+              </p>
+              <div className='flex justify-center gap-2 mb-2 lg:justify-start'>
+                <Button className='w-auto text-xl' size='lg' variant='secondary' asChild>
+                  <a href='#howItWorks'> Get Started </a>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
 
         {/* Hero cards sections */}
-        <div className='z-10 hidden lg:flex flex-row flex-wrap gap-8 relative'>
-          <div className=' '>
+        <div className='relative z-10 flex-row flex-wrap hidden gap-8 lg:flex'>
+          <div className=''>
             <img
               src={astronaut}
               alt='astronaut'
