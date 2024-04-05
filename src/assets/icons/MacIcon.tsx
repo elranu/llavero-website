@@ -1,4 +1,4 @@
-function MacIcon(props) {
+function MacIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       width='800px'

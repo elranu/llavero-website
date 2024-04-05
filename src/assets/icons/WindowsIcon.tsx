@@ -1,4 +1,4 @@
-function WindowsIcon(props) {
+function WindowsIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       width='800px'
