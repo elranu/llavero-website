@@ -46,182 +46,361 @@ export function AwsCredentialsDialog(): JSX.Element {
           <DialogTitle>Create AWS Credentials</DialogTitle>
           <DialogDescription />
         </DialogHeader>
-        <div>
+        <div className='flex flex-col gap-8'>
           <video controls>
             <source src={vidcred} type='video/mp4' width='600' />
           </video>
 
-          <hr className='w-3/4 my-4 ' />
+          <hr />
           <div>
-            <h3>
-              <a href='https://us-east-1.console.aws.amazon.com/console/home?nc2=h_ct&amp;src=header-signin&amp;region=us-east-1'>
+            <h3 className='mb-2 font-bold'>
+              <a
+                className='text-primary'
+                rel='noopener noreferrer'
+                target='_blank'
+                href='https://us-east-1.console.aws.amazon.com/console/home?nc2=h_ct&amp;src=header-signin&amp;region=us-east-1'
+              >
                 1. Go to Console Home | Console Home | us-east-1
               </a>
             </h3>
-            <p></p>
-            <img width='600' src={onePic} /> <hr className='w-3/4 my-4 ' />
+            <img className='mx-auto border-2 rounded border-primary' width='600' src={onePic} />{' '}
           </div>
+          <hr />
           <div>
-            <h3>
-              <a href='https://us-east-1.console.aws.amazon.com/console/home?nc2=h_ct&amp;src=header-signin&amp;region=us-east-1'>
+            <h3 className='mb-2 font-bold'>
+              <a
+                className='text-primary'
+                rel='noopener noreferrer'
+                target='_blank'
+                href='https://us-east-1.console.aws.amazon.com/console/home?nc2=h_ct&amp;src=header-signin&amp;region=us-east-1'
+              >
                 2. Search on AWS Console
               </a>
             </h3>
-            <p></p>
-            <img width='600' src={twoPic} /> <hr className='w-3/4 my-4 ' />
+            <img className='mx-auto border-2 rounded border-primary' width='600' src={twoPic} />{' '}
           </div>
+          <hr />
           <div>
-            <h3>
-              <a href='https://us-east-1.console.aws.amazon.com/console/home?nc2=h_ct&amp;src=header-signin&amp;region=us-east-1'>
+            <h3 className='mb-2 font-bold'>
+              <a
+                className='text-primary'
+                rel='noopener noreferrer'
+                target='_blank'
+                href='https://us-east-1.console.aws.amazon.com/console/home?nc2=h_ct&amp;src=header-signin&amp;region=us-east-1'
+              >
                 3. Type iam
               </a>
             </h3>
             <p></p>
-            <img width='600' src={threePic} /> <hr className='w-3/4 my-4 ' />
+            <img
+              className='mx-auto border-2 rounded border-primary'
+              width='600'
+              src={threePic}
+            />{' '}
           </div>
+          <hr />
           <div>
-            <h3>
-              <a href='https://us-east-1.console.aws.amazon.com/console/home?nc2=h_ct&amp;src=header-signin&amp;region=us-east-1'>
+            <h3 className='mb-2 font-bold'>
+              <a
+                className='text-primary'
+                rel='noopener noreferrer'
+                target='_blank'
+                href='https://us-east-1.console.aws.amazon.com/console/home?nc2=h_ct&amp;src=header-signin&amp;region=us-east-1'
+              >
                 4. Click on Users
               </a>
             </h3>
             <p></p>
-            <img width='600' src={fourPic} /> <hr className='w-3/4 my-4 ' />
+            <img
+              className='mx-auto border-2 rounded border-primary'
+              width='600'
+              src={fourPic}
+            />{' '}
           </div>
+          <hr />
           <div>
-            <h3>
-              <a href='https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/users'>
+            <h3 className='mb-2 font-bold'>
+              <a
+                className='text-primary'
+                rel='noopener noreferrer'
+                target='_blank'
+                href='https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/users'
+              >
                 5. Click on Create user
               </a>
             </h3>
             <p></p>
-            <img width='600' src={fivePic} /> <hr className='w-3/4 my-4 ' />
+            <img
+              className='mx-auto border-2 rounded border-primary'
+              width='600'
+              src={fivePic}
+            />{' '}
           </div>
+          <hr />
           <div>
-            <h3>
-              <a href='https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/users/create'>
+            <h3 className='mb-2 font-bold'>
+              <a
+                className='text-primary'
+                rel='noopener noreferrer'
+                target='_blank'
+                href='https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/users/create'
+              >
                 6. Type the name of the user
               </a>
             </h3>
             <p></p>
-            <img width='600' src={sixPic} /> <hr className='w-3/4 my-4 ' />
+            <img
+              className='mx-auto border-2 rounded border-primary'
+              width='600'
+              src={sixPic}
+            />{' '}
           </div>
+          <hr />
           <div>
-            <h3>
-              <a href='https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/users/create'>
+            <h3 className='mb-2 font-bold'>
+              <a
+                className='text-primary'
+                rel='noopener noreferrer'
+                target='_blank'
+                href='https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/users/create'
+              >
                 7. Click on Next
               </a>
             </h3>
             <p></p>
-            <img width='600' src={sevenPic} /> <hr className='w-3/4 my-4 ' />
+            <img
+              className='mx-auto border-2 rounded border-primary'
+              width='600'
+              src={sevenPic}
+            />{' '}
           </div>
+          <hr />
           <div>
-            <h3>
-              <a href='https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/users/create'>
+            <h3 className='mb-2 font-bold'>
+              <a
+                className='text-primary'
+                rel='noopener noreferrer'
+                target='_blank'
+                href='https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/users/create'
+              >
                 8. Click on Attach policies directly
               </a>
             </h3>
             <p></p>
-            <img width='600' src={eightPic} /> <hr className='w-3/4 my-4 ' />
+            <img
+              className='mx-auto border-2 rounded border-primary'
+              width='600'
+              src={eightPic}
+            />{' '}
           </div>
+          <hr />
           <div>
-            <h3>
-              <a href='https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/users/create'>
+            <h3 className='mb-2 font-bold'>
+              <a
+                className='text-primary'
+                rel='noopener noreferrer'
+                target='_blank'
+                href='https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/users/create'
+              >
                 9. Search AdministratorAccess
               </a>
             </h3>
             <p></p>
-            <img width='600' src={ninePic} /> <hr className='w-3/4 my-4 ' />
+            <img
+              className='mx-auto border-2 rounded border-primary'
+              width='600'
+              src={ninePic}
+            />{' '}
           </div>
+          <hr />
           <div>
-            <h3>
-              <a href='https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/users/create'>
+            <h3 className='mb-2 font-bold'>
+              <a
+                className='text-primary'
+                rel='noopener noreferrer'
+                target='_blank'
+                href='https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/users/create'
+              >
                 10. Select AdministratorAccess{' '}
               </a>
             </h3>
             <p></p>
-            <img width='600' src={tenPic} /> <hr className='w-3/4 my-4 ' />
+            <img
+              className='mx-auto border-2 rounded border-primary'
+              width='600'
+              src={tenPic}
+            />{' '}
           </div>
+          <hr />
           <div>
-            <h3>
-              <a href='https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/users/create'>
+            <h3 className='mb-2 font-bold'>
+              <a
+                className='text-primary'
+                rel='noopener noreferrer'
+                target='_blank'
+                href='https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/users/create'
+              >
                 11. Click on Next
               </a>
             </h3>
             <p></p>
-            <img width='600' src={elevenPic} /> <hr className='w-3/4 my-4 ' />
+            <img
+              className='mx-auto border-2 rounded border-primary'
+              width='600'
+              src={elevenPic}
+            />{' '}
           </div>
+          <hr />
           <div>
-            <h3>
-              <a href='https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/users/create'>
+            <h3 className='mb-2 font-bold'>
+              <a
+                className='text-primary'
+                rel='noopener noreferrer'
+                target='_blank'
+                href='https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/users/create'
+              >
                 12. Click on Create user
               </a>
             </h3>
             <p></p>
-            <img width='600' src={twelvePic} /> <hr className='w-3/4 my-4 ' />
+            <img
+              className='mx-auto border-2 rounded border-primary'
+              width='600'
+              src={twelvePic}
+            />{' '}
           </div>
+          <hr />
           <div>
-            <h3>
-              <a href='https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/users'>
+            <h3 className='mb-2 font-bold'>
+              <a
+                className='text-primary'
+                rel='noopener noreferrer'
+                target='_blank'
+                href='https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/users'
+              >
                 13. Click on View user
               </a>
             </h3>
             <p></p>
-            <img width='600' src={thirteenPic} /> <hr className='w-3/4 my-4 ' />
+            <img
+              className='mx-auto border-2 rounded border-primary'
+              width='600'
+              src={thirteenPic}
+            />{' '}
           </div>
+          <hr />
           <div>
-            <h3>
-              <a href='https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/users/details/llavero-installer?section=permissions'>
+            <h3 className='mb-2 font-bold'>
+              <a
+                className='text-primary'
+                rel='noopener noreferrer'
+                target='_blank'
+                href='https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/users/details/llavero-installer?section=permissions'
+              >
                 14. Click on Security credentials
               </a>
             </h3>
             <p></p>
-            <img width='600' src={fourteenPic} /> <hr className='w-3/4 my-4 ' />
+            <img
+              className='mx-auto border-2 rounded border-primary'
+              width='600'
+              src={fourteenPic}
+            />{' '}
           </div>
+          <hr />
           <div>
-            <h3>
-              <a href='https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/users/details/llavero-installer?section=security_credentials'>
+            <h3 className='mb-2 font-bold'>
+              <a
+                className='text-primary'
+                rel='noopener noreferrer'
+                target='_blank'
+                href='https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/users/details/llavero-installer?section=security_credentials'
+              >
                 15. Click on Create access key
               </a>
             </h3>
             <p></p>
-            <img width='600' src={fifteenPic} /> <hr className='w-3/4 my-4 ' />
+            <img
+              className='mx-auto border-2 rounded border-primary'
+              width='600'
+              src={fifteenPic}
+            />{' '}
           </div>
+          <hr />
           <div>
-            <h3>
-              <a href='https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/users/details/llavero-installer/create-access-key'>
+            <h3 className='mb-2 font-bold'>
+              <a
+                className='text-primary'
+                rel='noopener noreferrer'
+                target='_blank'
+                href='https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/users/details/llavero-installer/create-access-key'
+              >
                 16. Click on Other
               </a>
             </h3>
             <p></p>
-            <img width='600' src={sixteenPic} /> <hr className='w-3/4 my-4 ' />
+            <img
+              className='mx-auto border-2 rounded border-primary'
+              width='600'
+              src={sixteenPic}
+            />{' '}
           </div>
+          <hr />
           <div>
-            <h3>
-              <a href='https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/users/details/llavero-installer/create-access-key'>
+            <h3 className='mb-2 font-bold'>
+              <a
+                className='text-primary'
+                rel='noopener noreferrer'
+                target='_blank'
+                href='https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/users/details/llavero-installer/create-access-key'
+              >
                 17. Click on Next
               </a>
             </h3>
             <p></p>
-            <img width='600' src={seventeenPic} /> <hr className='w-3/4 my-4 ' />
+            <img
+              className='mx-auto border-2 rounded border-primary'
+              width='600'
+              src={seventeenPic}
+            />{' '}
           </div>
+          <hr />
           <div>
-            <h3>
-              <a href='https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/users/details/llavero-installer/create-access-key'>
+            <h3 className='mb-2 font-bold'>
+              <a
+                className='text-primary'
+                rel='noopener noreferrer'
+                target='_blank'
+                href='https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/users/details/llavero-installer/create-access-key'
+              >
                 18. Click on Create access key
               </a>
             </h3>
             <p></p>
-            <img width='600' src={eighteenPic} /> <hr className='w-3/4 my-4 ' />
+            <img
+              className='mx-auto border-2 rounded border-primary'
+              width='600'
+              src={eighteenPic}
+            />{' '}
           </div>
+          <hr />
           <div>
-            <h3>
-              <a href='https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/users/details/llavero-installer/create-access-key'>
+            <h3 className='mb-2 font-bold'>
+              <a
+                className='text-primary'
+                rel='noopener noreferrer'
+                target='_blank'
+                href='https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/users/details/llavero-installer/create-access-key'
+              >
                 19. Copy the credentials to use them with the Llavero Wallet installer
               </a>
             </h3>
             <p></p>
-            <img width='600' src={nineteenPic} /> <hr className='w-3/4 my-4 ' />
+            <img
+              className='mx-auto border-2 rounded border-primary'
+              width='600'
+              src={nineteenPic}
+            />{' '}
           </div>
         </div>
 

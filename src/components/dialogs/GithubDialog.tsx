@@ -54,174 +54,211 @@ export function GithubDialog(): JSX.Element {
           <DialogTitle>Fork + Github Actions</DialogTitle>
           <DialogDescription />
         </DialogHeader>
-        <div>
+        <div className='flex flex-col gap-8'>
           <div>
-            <h3>
-              <a href='https://github.com/elranu/llavero' className='text-xl text-blue-600'>
+            <h3 className='mb-2 font-bold'>
+              <a
+                className='text-primary'
+                rel='noopener noreferrer'
+                target='_blank'
+                href='https://github.com/elranu/llavero'
+              >
                 1. Go to the Llavero's Repo: github.com/elranu/llavero
               </a>
             </h3>
-            <p></p>
-            <img width='600' src={zeroPic} />
+            <img className='mx-auto border-2 rounded border-primary' width='600' src={zeroPic} />
           </div>
-          <hr className='w-3/4 my-4 ' />
+          <hr />
           <div>
-            <h3>
-              <a href='https://github.com/elranu/llavero'>2. Click on Fork</a>
+            <h3 className='mb-2 font-bold'>
+              <a
+                className='text-primary'
+                rel='noopener noreferrer'
+                target='_blank'
+                href='https://github.com/elranu/llavero'
+              >
+                2. Click on Fork
+              </a>
             </h3>
-            <p></p>
-            <img width='600' src={onePic} />
+            <img className='mx-auto border-2 rounded border-primary' width='600' src={onePic} />
           </div>
-          <hr className='w-3/4 my-4 ' />
+          <hr />
           <div>
-            <h3>
-              <a href='https://github.com/elranu/llavero/fork'>3. Click on Choose an owner</a>
+            <h3 className='mb-2 font-bold'>
+              <a
+                className='text-primary'
+                rel='noopener noreferrer'
+                target='_blank'
+                href='https://github.com/elranu/llavero/fork'
+              >
+                3. Click on Choose an owner
+              </a>
             </h3>
-            <p></p>
-            <img width='600' src={twoPic} />
+            <img className='mx-auto border-2 rounded border-primary' width='600' src={twoPic} />
           </div>
-          <hr className='w-3/4 my-4 ' />
+          <hr />
           <div>
-            <h3>
-              <a href='https://github.com/elranu/llavero/fork'>4. Click on Create fork</a>
+            <h3 className='mb-2 font-bold'>
+              <a
+                className='text-primary'
+                rel='noopener noreferrer'
+                target='_blank'
+                href='https://github.com/elranu/llavero/fork'
+              >
+                4. Click on Create fork
+              </a>
             </h3>
-            <p></p>
-            <img width='600' src={threePic} />
+            <img className='mx-auto border-2 rounded border-primary' width='600' src={threePic} />
           </div>
-          <hr className='w-3/4 my-4 ' />
+          <hr />
           <div>
-            <h3>5. On your brand new fork, click on Settings</h3>
-            <p></p>
-            <img width='600' src={fourPic} />
+            <h3 className='mb-2 font-bold'>5. On your brand new fork, click on Settings</h3>
+            <img className='mx-auto border-2 rounded border-primary' width='600' src={fourPic} />
           </div>
-          <hr className='w-3/4 my-4 ' />
+          <hr />
           <div>
-            <h3>6. Click on Secrets and variables</h3>
-            <p></p>
-            <img width='600' src={fivePic} />
+            <h3 className='mb-2 font-bold'>6. Click on Secrets and variables</h3>
+            <img className='mx-auto border-2 rounded border-primary' width='600' src={fivePic} />
           </div>
-          <hr className='w-3/4 my-4 ' />
+          <hr />
           <div>
-            <h3>7. Click on Actions</h3>
-            <p></p>
-            <img width='600' src={sixPic} />
+            <h3 className='mb-2 font-bold'>7. Click on Actions</h3>
+            <img className='mx-auto border-2 rounded border-primary' width='600' src={sixPic} />
           </div>
-          <hr className='w-3/4 my-4 ' />
+          <hr />
           <div>
-            <h3>8. Click on New repository secret</h3>
-            <p></p>
-            <img width='600' src={sevenPic} />
+            <h3 className='mb-2 font-bold'>8. Click on New repository secret</h3>
+            <img className='mx-auto border-2 rounded border-primary' width='600' src={sevenPic} />
           </div>
-          <hr className='w-3/4 my-4 ' />
-          <div>
-            <h3>9. Create the following secrets on your forked repo:</h3>
+          <hr />
+          <div className='block'>
+            <h3 className='mb-2 font-bold'>9. Create the following secrets on your forked repo:</h3>
             <br />
-            <ul>
-              <li>1. AWS_ACCESS_KEY_ID: the created KEY Id</li>
-              <li>2. AWS_SECRET_ACCESS_KEY : the created Secret Key </li>
-              <li>3. EMAIL : the email for account recovery and login.</li>
-              <li>4. REGION : us-east-1</li>
-            </ul>
+
+            <pre>
+              <code className='inline-flex items-center p-4 pl-6 space-x-4 text-sm text-left text-white bg-gray-800 rounded-lg sm:text-base'>{`AWS_ACCESS_KEY_ID: The created KEY ID
+AWS_SECRET_ACCESS_KEY: The created SECRET KEY
+EMAIL: The email for account recovery and login.
+REGION: us-east-1 or the region of your preference`}</code>
+            </pre>
 
             <br />
-            <img width='600' src={eightPic} />
+            <img className='mx-auto border-2 rounded border-primary' width='600' src={eightPic} />
           </div>
-          <hr className='w-3/4 my-4 ' />
+          <hr />
           <div>
-            <h3>10. Click on Actions</h3>
-            <p></p>
-            <img width='600' src={sixteenPic} />
+            <h3 className='mb-2 font-bold'>10. Click on Actions</h3>
+            <img className='mx-auto border-2 rounded border-primary' width='600' src={sixteenPic} />
           </div>
-          <hr className='w-3/4 my-4 ' />
+          <hr />
           <div>
-            <h3>11. Click on highlight</h3>
-            <p></p>
-            <img width='600' src={seventeenPic} />
+            <h3 className='mb-2 font-bold'>11. Click on highlight</h3>
+            <img
+              className='mx-auto border-2 rounded border-primary'
+              width='600'
+              src={seventeenPic}
+            />
           </div>
-          <hr className='w-3/4 my-4 ' />
+          <hr />
           <div>
-            <h3>12. Click on GithubAction Installer</h3>
-            <p></p>
-            <img width='600' src={eighteenPic} />
+            <h3 className='mb-2 font-bold'>12. Click on GithubAction Installer</h3>
+            <img
+              className='mx-auto border-2 rounded border-primary'
+              width='600'
+              src={eighteenPic}
+            />
           </div>
-          <hr className='w-3/4 my-4 ' />
+          <hr />
           <div>
-            <h3>13. Click on Run workflow</h3>
-            <p></p>
-            <img width='600' src={nineteenPic} />
+            <h3 className='mb-2 font-bold'>13. Click on Run workflow</h3>
+            <img
+              className='mx-auto border-2 rounded border-primary'
+              width='600'
+              src={nineteenPic}
+            />
           </div>
-          <hr className='w-3/4 my-4 ' />
+          <hr />
           <div>
-            <h3>14. Click on Run workflow</h3>
-            <p></p>
-            <img width='600' src={twentyPic} />
+            <h3 className='mb-2 font-bold'>14. Click on Run workflow</h3>
+            <img className='mx-auto border-2 rounded border-primary' width='600' src={twentyPic} />
           </div>
-          <hr className='w-3/4 my-4 ' />
+          <hr />
           <div>
-            <h3>15. Click on GithubAction Installer</h3>
-            <p></p>
-            <img width='600' src={twentyonePic} />
+            <h3 className='mb-2 font-bold'>15. Click on GithubAction Installer</h3>
+            <img
+              className='mx-auto border-2 rounded border-primary'
+              width='600'
+              src={twentyonePic}
+            />
           </div>
-          <hr className='w-3/4 my-4 ' />
+          <hr />
           <div>
-            <h3>16. Click on Workflow-Installer.</h3>
+            <h3 className='mb-2 font-bold'>16. Click on Workflow-Installer.</h3>
             <div>
-              <p>
+              <p className='mb-2 text-sm text-muted-foreground'>
                 Here you can see how your installation on your personal cloud stack is progressing.
-                <br />
                 It will take 15-20
               </p>
             </div>
-            <p></p>
-            <img width='600' src={twentytwoPic} />
+            <img
+              className='mx-auto border-2 rounded border-primary'
+              width='600'
+              src={twentytwoPic}
+            />
           </div>
-          <hr className='w-3/4 my-4 ' />
+          <hr />
           <div>
-            <h3>
-              <a href='https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#'>
+            <h3 className='mb-2 font-bold'>
+              <a
+                className='text-primary'
+                rel='noopener noreferrer'
+                target='_blank'
+                href='https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#'
+              >
                 24. On AWS Cloudformation
               </a>
             </h3>
             <div>
-              <p>Meanwhile you can check the installation stack. </p>
+              <p className='mb-2 text-sm text-muted-foreground'>
+                Meanwhile you can check the installation stack.{' '}
+              </p>
             </div>
-            <p></p>
-            <img width='600' src={twentythreePic} />
+            <img
+              className='mx-auto border-2 rounded border-primary'
+              width='600'
+              src={twentythreePic}
+            />
           </div>
           <br />
           <br />
-
-          <h1 className='text-2xl '>After the installation finish</h1>
           <hr />
-          <br />
+          <h1 className='text-lg '># After the installation finish</h1>
           <div>
-            <h3>
+            <h3 className='mb-2 font-bold'>
               1. When the installation finish, you will get an email with the subject: Llavero: Your
               temporary password
             </h3>
             <div>
-              <p>The page is created on your personal AWS cloud. Browse</p>
+              <p className='mb-2 text-sm text-muted-foreground'>
+                The page is created on your personal AWS cloud Browse
+              </p>
             </div>
-            <p></p>
-            <img width='600' src={loginzero} />
+            <img className='mx-auto border-2 rounded border-primary' width='600' src={loginzero} />
           </div>
-          <hr className='w-3/4 my-4 ' />
+          <hr />
           <div>
-            <h3>2. Click on Log in</h3>
-            <p></p>
-            <img width='600' src={loginone} />
+            <h3 className='mb-2 font-bold'>2. Click on Log in</h3>
+            <img className='mx-auto border-2 rounded border-primary' width='600' src={loginone} />
           </div>
-          <hr className='w-3/4 my-4 ' />
+          <hr />
           <div>
-            <h3>3. Sign in with your temporary password </h3>
-            <p></p>
-            <img width='600' src={logintwo} />
+            <h3 className='mb-2 font-bold'>3. Sign in with your temporary password </h3>
+            <img className='mx-auto border-2 rounded border-primary' width='600' src={logintwo} />
           </div>
-          <hr className='w-3/4 my-4 ' />
+          <hr />
           <div>
-            <h3>4. Create your new strong password</h3>
-            <p></p>
-            <img width='600' src={loginfour} />
+            <h3 className='mb-2 font-bold'>4. Create your new strong password</h3>
+            <img className='mx-auto border-2 rounded border-primary' width='600' src={loginfour} />
           </div>
         </div>
 

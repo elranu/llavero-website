@@ -74,31 +74,17 @@ export const Hero = () => {
 
           <div>
             <h2 className='text-2xl md:text-2xl'>Don't loose your keys anymore.</h2>
-            <p>
-              Discover the Power of <strong>Llavero</strong>:
-            </p>
           </div>
 
-          <div className='flex flex-col gap-x-8 gap-y-4 md:flex-row md:items-end'>
-            <div>
-              <p className='text-lg'>
-                <strong>One</strong> minute intro video:
-              </p>
-              <div className='flex justify-center gap-2 mb-2 lg:justify-start'>
-                <Button size='lg' className='w-auto text-xl' onClick={() => setOpen(true)}>
-                  Watch Now
-                </Button>
-              </div>
-            </div>
-            <div>
-              <p className='text-lg'>
-                <strong></strong>
-              </p>
-              <div className='flex justify-center gap-2 mb-2 lg:justify-start'>
-                <Button className='w-auto text-xl' size='lg' variant='secondary' asChild>
-                  <a href='#howItWorks'> Get Started </a>
-                </Button>
-              </div>
+          <div className='flex flex-col gap-x-8 gap-y-4'>
+            <div className='flex flex-col items-center gap-2 lg:flex-row'>
+              <Button className='w-auto text-xl' size='lg' onClick={() => setOpen(true)}>
+                Watch 1 min intro video
+              </Button>
+              <div className='text-primary'>and</div>
+              <Button className='w-auto text-xl' size='lg' variant='secondary' asChild>
+                <a href='#howItWorks'> Get Started </a>
+              </Button>
             </div>
           </div>
         </div>

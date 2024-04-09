@@ -15,6 +15,7 @@ import { Team } from './components/Team';
 import './App.css';
 import { inject } from '@vercel/analytics';
 import StarUsOnGitHub from './components/StarUsOnGitHub';
+import { JoinUs } from './components/JoinUs';
 
 function App() {
   inject();
@@ -30,12 +31,13 @@ function App() {
       <Cta />
       <Services />
       {/* <Sponsors /> */}
-
+      <JoinUs />
       {/* <Testimonials /> */}
       <Team />
       {/* <Pricing /> */}
       {/* <Newsletter /> */}
       {/* <FAQ /> */}
+
       <Footer />
       <ScrollToTop />
       <StarUsOnGitHub />

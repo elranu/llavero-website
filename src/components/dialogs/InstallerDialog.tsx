@@ -33,12 +33,12 @@ export function InstallerDialog(): JSX.Element {
               <a href='#' target='_blank'>
                 <div className='flex flex-col items-center justify-center gap-2 p-8 text-primary group hover:text-primary-foreground'>
                   <WindowsIcon className='w-12 h-12' />
-                  <div className='mb-4'>Windows Installer</div>
+                  <div>Windows Installer</div>
+                  <div className='mb-4 text-xs'>v.preview</div>
                   <div className='text-sm text-muted-foreground group-hover:text-secondary-foreground'>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos reiciendis
                     quo velit expedita.
                   </div>
-                  <div className='text-xs'>v.preview</div>
                 </div>
               </a>
             </div>
@@ -46,12 +46,12 @@ export function InstallerDialog(): JSX.Element {
               <a href='#' target='_blank'>
                 <div className='flex flex-col items-center justify-center gap-2 p-8 text-primary group hover:text-primary-foreground'>
                   <MacIcon className='w-12 h-12' />
-                  <div className='mb-4'>MacOS Installer</div>
+                  <div>MacOS Installer</div>
+                  <div className='mb-4 text-xs'>v.preview</div>
                   <div className='text-sm text-muted-foreground group-hover:text-secondary-foreground'>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos reiciendis
                     quo velit expedita.
                   </div>
-                  <div className='text-xs'>v.preview</div>
                 </div>
               </a>
             </div>
@@ -59,12 +59,12 @@ export function InstallerDialog(): JSX.Element {
               <a href='#' target='_blank'>
                 <div className='flex flex-col items-center justify-center gap-2 p-8 text-primary group hover:text-primary-foreground'>
                   <LinuxIcon className='w-12 h-12' />
-                  <div className='mb-4'>Linux Installer</div>
+                  <div>Linux Installer</div>
+                  <div className='mb-4 text-xs'>v.preview</div>
                   <div className='text-sm text-muted-foreground group-hover:text-secondary-foreground'>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos reiciendis
                     quo velit expedita.
                   </div>
-                  <div className='text-xs'>v.preview</div>
                 </div>
               </a>
             </div>
