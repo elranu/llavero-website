@@ -23,27 +23,15 @@ export const Footer = () => {
             </a>
           </div>
         </div>
-        {/* 
+         
         <div className='flex flex-col gap-2'>
-          <h3 className='font-bold text-lg'>Platforms</h3>
+          <h3 className='font-bold text-lg'>Tools</h3>
           <div>
-            <a href='#' className='opacity-60 hover:opacity-100'>
-              Web
+            <a href='https://github.com/elranu/llavero/blob/master/docs/uninstall.md' className='opacity-60 hover:opacity-100'>
+              How to uninstall
             </a>
           </div>
-
-          <div>
-            <a href='#' className='opacity-60 hover:opacity-100'>
-              Mobile
-            </a>
-          </div>
-
-          <div>
-            <a href='#' className='opacity-60 hover:opacity-100'>
-              Desktop
-            </a>
-          </div>
-        </div> */}
+        </div> 
 
         {/* <div className='flex flex-col gap-2'>
           <h3 className='font-bold text-lg'>About</h3>
