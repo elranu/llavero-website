@@ -13,14 +13,14 @@ interface ServiceProps {
 
 const serviceList: ServiceProps[] = [
   {
+    title: 'User friendly as SaaS',
+    description: 'Enterprise-grade security and privacy for the end user. No intermediates, no data sharing.',
+    icon: <img src={saas} alt='saas' className='w-10' />,
+  },
+  {
     title: 'MFA ease of use and security (TOTP, Biometrics, email, whitelist...)',
     description: 'IaC security and automation for the end user, without intermediates.',
     icon: <img src={bio} alt='biometrics' className='w-10' />,
-  },
-  {
-    title: 'User friendly as SaaS',
-    description: 'AWS KMS is the hardware wallet that Companies uses such as OpenZeppelin.',
-    icon: <img src={saas} alt='saas' className='w-10' />,
   },
   {
     title: 'Open-source',
@@ -31,7 +31,7 @@ const serviceList: ServiceProps[] = [
   {
     title: 'Next step: censorship resistance',
     description:
-      'Contributions to fulfill this objective. Feedback at: Cloud agnostic, multi-cloud MPC, on-hardware',
+      'We have a lot of objectives and we need Contributions to fulfill this objectives. Contact us for future meetings and collaborations.',
     icon: <img src={nextsteps} alt='next steps' className='w-10' />,
   },
 ];
@@ -50,8 +50,8 @@ export const Services = () => {
           </h2>
 
           <p className='mt-4 mb-8 text-xl text-muted-foreground '>
-            <strong>Llavero</strong> Wallet is the first IndentityOps. Decentralizing identity for
-            end-users.
+            <strong>Llavero</strong> Wallet is the first IndentityOps. The goal is to provide a secure and easy-to-use personal stack for individuals.
+            So that users can manage their digital Identity and assets in a private and decentralized way. 
           </p>
 
           <div className='flex flex-col gap-8'>

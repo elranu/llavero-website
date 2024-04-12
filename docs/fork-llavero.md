@@ -38,6 +38,7 @@
 2. AWS\_SECRET\_ACCESS\_KEY : the created Secret Key 
 3. EMAIL : the email for account recovery and login.
 4. REGION : us-east-1
+5. NUMBER_OF_KEYS (optional default: 1): The number of KMS to be created
 
 
 ### 10\. Click on Actions

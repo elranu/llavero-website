@@ -4,10 +4,10 @@ export const JoinUs = () => {
   return (
     <section id='join-us' className='container flex flex-col items-center justify-center py-24'>
       <p className='max-w-xl text-4xl font-bold text-center'>
-        Want to join the Llavero Wallet community? <span className='text-primary'>Join us.</span>
+        Want to contribute to Llavero? <span className='text-primary'> Or Give us feedback</span>
       </p>
       <Button size='lg' className='w-auto mt-8 text-2xl shadow-2xl'>
-        Join us
+        <a href='https://forms.gle/EffWGrBUdc4wPBSD8' target='_blank'> Contact us</a>
       </Button>
     </section>
   );
