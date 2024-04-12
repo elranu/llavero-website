@@ -43,25 +43,25 @@ const featureList: string[] = [
 
 export const Features = () => {
   return (
-    <section id='features' className='container py-6 space-y-8'>
-      <h2 className='text-3xl lg:text-4xl font-bold md:text-center'>
+    <section id='features' className='container py-6'>
+      <h2 className='text-3xl font-bold lg:text-4xl md:text-center'>
         Many{' '}
-        <span className='bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text'>
+        <span className='text-transparent bg-gradient-to-b from-primary/60 to-primary bg-clip-text'>
           Great Features
         </span>
       </h2>
 
-      <div className='flex flex-wrap md:justify-center gap-4'>
+      <div className='flex flex-wrap gap-4 mt-8 md:justify-center'>
         {featureList.map((feature: string) => (
           <div key={feature}>
-            <Badge variant='secondary' className='text-sm'>
+            <Badge variant='outline' className='text-sm border-primary'>
               {feature}
             </Badge>
           </div>
         ))}
       </div>
 
-      <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
+      <div className='grid gap-8 mt-24 md:grid-cols-2 lg:grid-cols-3'>
         {features.map(({ title, description, image }: FeatureProps) => (
           <Card key={title}>
             <CardHeader>

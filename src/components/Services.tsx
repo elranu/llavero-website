@@ -38,18 +38,18 @@ const serviceList: ServiceProps[] = [
 
 export const Services = () => {
   return (
-    <section className='container py-10 gap-10 px-6 md:px-12 lg:px-20 justify-center'>
-      <div className='grid xl:grid-cols-[1fr,1fr] gap-8 place-items-center'>
+    <section className='container justify-center gap-10 px-6 py-10 md:px-12 lg:px-20'>
+      <div className='grid xl:grid-cols-[2fr,1fr] gap-8 place-items-center'>
         <div>
-          <h2 className='text-3xl md:text-4xl font-bold'>
+          <h2 className='text-3xl font-bold md:text-4xl'>
             Objective:
-            <span className='bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text'>
+            <span className='text-transparent bg-gradient-to-b from-primary/60 to-primary bg-clip-text'>
               {' '}
               Identity Decentralization
             </span>
           </h2>
 
-          <p className='text-muted-foreground text-xl mt-4 mb-8 '>
+          <p className='mt-4 mb-8 text-xl text-muted-foreground '>
             <strong>Llavero</strong> Wallet is the first IndentityOps. Decentralizing identity for
             end-users.
           </p>
@@ -59,13 +59,13 @@ export const Services = () => {
               <Card key={title}>
                 <CardHeader>
                   <div className='flex gap-4'>
-                    <div className='bg-primary/20 p-1 rounded-lg items-center justify-center flex h-fit'>
+                    <div className='flex items-center justify-center p-1 rounded-lg bg-primary/20 h-fit'>
                       {icon}
                     </div>
 
                     <div className='flex-1'>
                       <CardTitle>{title}</CardTitle>
-                      <CardDescription className='text-md mt-2'>{description}</CardDescription>
+                      <CardDescription className='mt-2 text-md'>{description}</CardDescription>
                     </div>
                   </div>
                 </CardHeader>

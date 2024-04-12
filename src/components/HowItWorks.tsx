@@ -3,7 +3,6 @@ import aws from '../assets/cloud2.svg';
 import credentials from '../assets/credentials.svg';
 import installer from '../assets/installer.svg';
 import fork from '../assets/fork.svg';
-import { Button } from './ui/button';
 import { AwsAccountDialog } from './dialogs/AwsAccountDialog';
 import { AwsCredentialsDialog } from './dialogs/AwsCredentialsDialog';
 import { InstallerDialog } from './dialogs/InstallerDialog';
@@ -41,7 +40,6 @@ const features: FeatureProps[] = [
     icon: <img src={fork} style={{ height: '80px' }} />,
     title: 'Fork + Github Actions',
     description: "Fork Llavero's repository, setup Github's secrets and run the Github Actions.",
-    button: <Button>Fork</Button>,
     dialog: <GithubDialog />,
   },
 ];
@@ -62,7 +60,7 @@ export const HowItWorks = () => {
         <strong>Llavero</strong> can be installed with the app Installer, in their respective OS or
         with Github Actions on your forked repository.
       </p>
-      <div className='grid lg:grid-cols-[auto,auto] gap-8 justify-center'>
+      <div className='grid lg:grid-rows-[auto,auto] gap-8 justify-center'>
         <Card className='w-[500px] bg-muted/50 relative'>
           <CardHeader>
             <CardTitle className='grid gap-4 place-items-center'>
@@ -99,11 +97,13 @@ export const HowItWorks = () => {
           </span>
         </Card>
       </div>
-      <div className='flex items-center justify-center gap-2 text-muted-foreground'>
-        <hr className='w-1/4 my-8 ' /> Select one <hr className='w-1/4 my-8 ' />
+      <div className='flex items-center justify-center gap-2 my-4 text-muted-foreground'>
+        <hr className='w-1/4 my-8 border-blue-300' />
+        <span className='text-lg text-blue-500 '>Choose your installer flavor</span>
+        <hr className='w-1/4 my-8 border-blue-300' />
       </div>
 
-      <div className='grid lg:grid-cols-[auto,auto] gap-8 mb-8 justify-center'>
+      <div className='grid lg:grid-cols-[auto,auto,auto] gap-y-4 gap-x-8 mb-8 justify-center'>
         <Card className='w-[500px] bg-muted/50 relative'>
           <CardHeader>
             <CardTitle className='grid gap-4 place-items-center'>
@@ -117,10 +117,9 @@ export const HowItWorks = () => {
               {features[2].dialog}
             </div>
           </CardContent>
-          <span className='absolute text-5xl font-bold text-transparent top-2 left-3 bg-gradient-to-b from-primary/60 to-primary bg-clip-text'>
-            3
-          </span>
         </Card>
+
+        <div className='flex items-center justify-center text-lg text-blue-500 '>or</div>
 
         <Card className='w-[500px] bg-muted/50 relative'>
           <CardHeader>
@@ -135,9 +134,6 @@ export const HowItWorks = () => {
               {features[3].dialog}
             </div>
           </CardContent>
-          <span className='absolute text-5xl font-bold text-transparent top-2 left-3 bg-gradient-to-b from-primary/60 to-primary bg-clip-text'>
-            3
-          </span>
         </Card>
       </div>
     </section>

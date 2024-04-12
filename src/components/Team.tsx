@@ -8,6 +8,8 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { Facebook, Github, Instagram, Linkedin, Twitter } from 'lucide-react';
+import MarianoProfileImage from '@/assets/mariano-profile-image.jpeg';
+import RicardoProfileImage from '@/assets/ricardo-profile-image.png';
 
 interface TeamProps {
   imageUrl: string;
@@ -24,8 +26,7 @@ interface SociaNetworkslProps {
 
 const teamList: TeamProps[] = [
   {
-    imageUrl:
-      'https://media.licdn.com/dms/image/C5603AQEhPa8izOzRgQ/profile-displayphoto-shrink_200_200/0/1517709799197?e=1716422400&v=beta&t=XCbePt_NRj713M8pqLtPJ0mDnLaXd9dXJmDdIQyt9j8',
+    imageUrl: MarianoProfileImage,
     name: 'Mariano Julio Vicario',
     position: 'Software Engineer - Tech Lead',
     description: "I'm a tech enthusiast with a passion for solving problems and a fast learner",
@@ -42,7 +43,7 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl: 'https://avatars.githubusercontent.com/u/25652943?v=4',
+    imageUrl: RicardoProfileImage,
     name: 'Ricardo Olarte',
     position: 'Software Engineer',
     description: "Passionate about applying the necessary technologies to improve people's lives",
