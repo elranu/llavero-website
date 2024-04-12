@@ -69,8 +69,8 @@ export const Footer = () => {
         <div className='flex flex-col gap-2'>
           <h3 className='font-bold text-lg'>Community</h3>
           <div>
-            <a href='#' className='opacity-60 hover:opacity-100'>
-              Discord
+            <a href='https://forms.gle/EffWGrBUdc4wPBSD8' className='opacity-60 hover:opacity-100'>
+              Contact Us
             </a>
           </div>
         </div>
