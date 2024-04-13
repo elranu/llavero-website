@@ -20,17 +20,17 @@ export function InstallerDialog(): JSX.Element {
   return (
     <Dialog open={isOpen} onOpenChange={onOpenChange}>
       <DialogTrigger asChild>
-        <Button className='mx-auto w-fit'>Download</Button>
+        <Button className='mx-auto w-fit'>Choose OS</Button>
       </DialogTrigger>
       <DialogContent className={'lg:max-w-screen-lg overflow-y-auto max-h-[90vh]'}>
         <DialogHeader>
-          <DialogTitle>Download Installer</DialogTitle>
+          <DialogTitle>Choose your OS</DialogTitle>
           <DialogDescription />
         </DialogHeader>
         <div>
           <div className='flex'>
             <div className='items-center justify-center flex-1 bg-muted hover:bg-primary'>
-              <a href='#' target='_blank'>
+              <a href='#' target='_blank' download>
                 <div className='flex flex-col items-center justify-center gap-2 p-8 text-primary group hover:text-primary-foreground'>
                   <WindowsIcon className='w-12 h-12' />
                   <div>Windows Installer</div>
@@ -43,7 +43,7 @@ export function InstallerDialog(): JSX.Element {
               </a>
             </div>
             <div className='items-center justify-center flex-1 bg-muted hover:bg-primary'>
-              <a href='#' target='_blank'>
+              <a href='#' target='_blank' download>
                 <div className='flex flex-col items-center justify-center gap-2 p-8 text-primary group hover:text-primary-foreground'>
                   <MacIcon className='w-12 h-12' />
                   <div>MacOS Installer</div>
@@ -56,7 +56,7 @@ export function InstallerDialog(): JSX.Element {
               </a>
             </div>
             <div className='items-center justify-center flex-1 bg-muted hover:bg-primary'>
-              <a href='#' target='_blank'>
+              <a href='#' target='_blank' download>
                 <div className='flex flex-col items-center justify-center gap-2 p-8 text-primary group hover:text-primary-foreground'>
                   <LinuxIcon className='w-12 h-12' />
                   <div>Linux Installer</div>
