@@ -135,7 +135,7 @@ export function GithubDialog(): JSX.Element {
             <h3 className='mb-2 font-bold'>9. Create the following secrets on your forked repo:</h3>
             <br />
 
-            <pre>
+            <pre className='whitespace-pre-wrap'>
               <code className='inline-flex items-center p-4 pl-6 space-x-4 text-sm text-left text-white bg-gray-800 rounded-lg sm:text-base'>{`AWS_ACCESS_KEY_ID: The created KEY ID
 AWS_SECRET_ACCESS_KEY: The created SECRET KEY
 EMAIL: The email for account recovery and login.

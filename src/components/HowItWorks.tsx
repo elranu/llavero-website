@@ -60,7 +60,7 @@ export const HowItWorks = () => {
         with Github Actions on your forked repository.
       </p>
       <div className='grid lg:grid-rows-[auto,auto] gap-8 justify-center'>
-        <Card className='max-w-[500px] lg:w-[500px] bg-muted/50 relative'>
+        <Card className='max-w-[450px] lg:w-[450px] bg-muted/50 relative'>
           <CardHeader>
             <CardTitle className='grid gap-4 place-items-center'>
               {features[0].icon}
@@ -78,7 +78,7 @@ export const HowItWorks = () => {
           </span>
         </Card>
 
-        <Card className='max-w-[500px] lg:w-[500px] bg-muted/50 relative'>
+        <Card className='max-w-[450px] lg:w-[450px] bg-muted/50 relative'>
           <CardHeader>
             <CardTitle className='grid gap-4 place-items-center'>
               {features[1].icon}
@@ -103,7 +103,7 @@ export const HowItWorks = () => {
       </div>
 
       <div className='grid lg:grid-cols-[auto,auto,auto] gap-y-4 gap-x-8 mb-8 justify-center'>
-        <Card className='max-w-[500px] lg:w-[500px] bg-muted/50 relative'>
+        <Card className='max-w-[450px] lg:w-[450px] bg-muted/50 relative'>
           <CardHeader>
             <CardTitle className='grid gap-4 place-items-center'>
               {features[2].icon}
@@ -120,7 +120,7 @@ export const HowItWorks = () => {
 
         <div className='flex items-center justify-center text-lg text-blue-500 '>or</div>
 
-        <Card className='max-w-[500px] lg:w-[500px] bg-muted/50 relative'>
+        <Card className='max-w-[450px] lg:w-[450px] bg-muted/50 relative'>
           <CardHeader>
             <CardTitle className='grid gap-4 place-items-center'>
               {features[3].icon}
