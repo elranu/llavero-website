@@ -18,7 +18,7 @@ export const Footer = () => {
         <div className='flex flex-col gap-2'>
           <h3 className='font-bold text-lg'>Follow Us</h3>
           <div>
-            <a href='https://github.com/elranu/llavero' className='opacity-60 hover:opacity-100'>
+            <a href='https://github.com/llaverowallet/llavero' className='opacity-60 hover:opacity-100'>
               Github
             </a>
           </div>
@@ -27,7 +27,7 @@ export const Footer = () => {
         <div className='flex flex-col gap-2'>
           <h3 className='font-bold text-lg'>Tools</h3>
           <div>
-            <a href='https://github.com/elranu/llavero/blob/master/docs/uninstall.md' className='opacity-60 hover:opacity-100'>
+            <a href='https://github.com/llaverowallet/llavero/blob/master/docs/uninstall.md' className='opacity-60 hover:opacity-100'>
               How to uninstall
             </a>
           </div>
