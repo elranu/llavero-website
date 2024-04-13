@@ -28,7 +28,7 @@ export function InstallerDialog(): JSX.Element {
           <DialogDescription />
         </DialogHeader>
         <div>
-          <div className='flex'>
+          <div className='flex flex-col flex-wrap lg:flex-row'>
             <div className='items-center justify-center flex-1 bg-muted hover:bg-primary'>
               <a href='#' target='_blank' download>
                 <div className='flex flex-col items-center justify-center gap-2 p-8 text-primary group hover:text-primary-foreground'>
