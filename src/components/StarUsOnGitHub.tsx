@@ -27,7 +27,7 @@ const StarUsOnGitHub = () => {
       <div className='flex items-center justify-center gap-2 p-2 text-white rounded-lg bg-primary w-fit'>
         <div className='flex gap-2'>
           <Button className='flex items-center justify-center gap-2' asChild>
-            <a href='https://github.com/elranu/llavero' target='_blank'>
+            <a href='https://github.com/llaverowallet/llavero' target='_blank'>
               Star us on GitHub <Github />
             </a>
           </Button>
