@@ -25,7 +25,7 @@ export const Cta = () => {
 
           <p className='text-muted-foreground text-xl mt-4 mb-8 lg:mb-0'>
             
-Llavero Wallet's mission is to offer enterprise-grade security to everyone at an affordable cost. In the AI era, human oversight is key. We're making technology accessible to all with easy setup, minimal maintenance, and the freedom to stay private and independent in the digital world without the need for expertise in security.
+Llavero Wallet's mission is to offer enterprise-grade security to everyone at an affordable cost. In the AI era, human intervention certification will be a must. We're making technology accessible to all with easy setup, minimal maintenance, and the freedom to stay private and independent in the digital world.
           </p>
           <p className='text-muted-foreground text-xl mt-4 mb-8 lg:mb-0'>
             On more step in decentralizing, with <strong>Llavero</strong> you avoid SaaS companies
