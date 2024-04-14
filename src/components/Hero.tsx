@@ -73,7 +73,7 @@ export const Hero = () => {
           </main>
 
           <div>
-            <h2 className='text-2xl md:text-2xl'>Don't loose your keys anymore.</h2>
+            <h2 className='text-2xl md:text-2xl'>The Vault for the people</h2>
           </div>
 
           <div className='flex flex-col gap-x-8 gap-y-4'>

@@ -42,10 +42,10 @@ export const Services = () => {
       <div className='grid xl:grid-cols-[2fr,1fr] gap-8 place-items-center'>
         <div>
           <h2 className='text-3xl font-bold md:text-4xl'>
-            Objective:
+          Identity
             <span className='text-transparent bg-gradient-to-b from-primary/60 to-primary bg-clip-text'>
               {' '}
-              Identity Decentralization
+               Decentralization
             </span>
           </h2>
 

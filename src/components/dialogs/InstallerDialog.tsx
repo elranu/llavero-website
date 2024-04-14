@@ -34,11 +34,11 @@ export function InstallerDialog(): JSX.Element {
         <div>
           <div className='flex'>
             <div className='items-center justify-center flex-1 bg-muted hover:bg-primary'>
-              <a href='https://github.com/elranu/llavero/releases/download/v0.1.0/llavero-0.1.0.Setup.exe' target='_blank'>
+              <a href='https://github.com/llaverowallet/llavero/releases/download/v0.1.0/llavero-0.1.0.Setup.exe' target='_blank'>
                 <div className='flex flex-col items-center justify-center gap-2 p-8 text-primary group hover:text-primary-foreground'>
                   <WindowsIcon className='w-12 h-12' />
                   <div>Windows Installer</div>
-                  <div className='mb-4 text-xs'><a href='https://github.com/elranu/llavero/releases/download/v0.1.0/llavero-0.1.0.Setup.exe' 
+                  <div className='mb-4 text-xs'><a href='https://github.com/llaverowallet/llavero/releases/download/v0.1.0/llavero-0.1.0.Setup.exe' 
                   className='underline hover:no-underline' >Llavero-0.1.0-preview.exe</a></div>
                   <div className='text-sm text-muted-foreground group-hover:text-secondary-foreground'>
                     
@@ -47,12 +47,12 @@ export function InstallerDialog(): JSX.Element {
               </a>
             </div>
             <div className='items-center justify-center flex-1 bg-muted hover:bg-primary'>
-              <a href='https://github.com/elranu/llavero/releases/download/v0.1.0/Llavero.dmg' target='_blank'>
+              <a href='https://github.com/llaverowallet/llavero/releases/download/v0.1.0/Llavero.dmg' target='_blank'>
                 <div className='flex flex-col items-center justify-center gap-2 p-8 text-primary group hover:text-primary-foreground'>
                   <MacIcon className='w-12 h-12' />
                   <div>MacOS Installer</div>
                   <div className='mb-4 text-xs'>
-                  <a href='https://github.com/elranu/llavero/releases/download/v0.1.0/Llavero.dmg' 
+                  <a href='https://github.com/llaverowallet/llavero/releases/download/v0.1.0/Llavero.dmg' 
                   className='underline hover:no-underline' >Llavero-0.1.0-preview.dmg</a>
                   </div>
                   <div className='text-sm text-muted-foreground group-hover:text-secondary-foreground'>
@@ -67,10 +67,10 @@ export function InstallerDialog(): JSX.Element {
                   <LinuxIcon className='w-12 h-12' />
                   <div>Linux Installer</div>
                   <div className='mb-4 text-xs'>
-                  <a href='https://github.com/elranu/llavero/releases/download/v0.1.0/llavero_0.1.0_amd64.deb' 
+                  <a href='https://github.com/llaverowallet/llavero/releases/download/v0.1.0/llavero_0.1.0_amd64.deb' 
                   className='underline hover:no-underline' >Llavero-0.1.0-preview.deb</a>
                   <br /><br />
-                  <a href='https://github.com/elranu/llavero/releases/download/v0.1.0/Llavero-0.1.0-1.x86_64.rpm' 
+                  <a href='https://github.com/llaverowallet/llavero/releases/download/v0.1.0/Llavero-0.1.0-1.x86_64.rpm' 
                   className='underline hover:no-underline' >Llavero-0.1.0-preview.rpm</a>
                   </div>
                   <div className='text-sm text-muted-foreground group-hover:text-secondary-foreground'>
