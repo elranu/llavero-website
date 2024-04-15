@@ -61,9 +61,9 @@ export function GithubDialog(): JSX.Element {
                 className='text-primary'
                 rel='noopener noreferrer'
                 target='_blank'
-                href='https://github.com/elranu/llavero'
+                href='https://github.com/llaverowallet/llavero'
               >
-                1. Go to the Llavero's Repo: github.com/elranu/llavero
+                1. Go to the Llavero's Repo: github.com/llaverowallet/llavero
               </a>
             </h3>
             <img className='mx-auto border-2 rounded border-primary' width='600' src={zeroPic} />
@@ -75,7 +75,7 @@ export function GithubDialog(): JSX.Element {
                 className='text-primary'
                 rel='noopener noreferrer'
                 target='_blank'
-                href='https://github.com/elranu/llavero'
+                href='https://github.com/llaverowallet/llavero'
               >
                 2. Click on Fork
               </a>
@@ -89,7 +89,7 @@ export function GithubDialog(): JSX.Element {
                 className='text-primary'
                 rel='noopener noreferrer'
                 target='_blank'
-                href='https://github.com/elranu/llavero/fork'
+                href='https://github.com/llaverowallet/llavero/fork'
               >
                 3. Click on Choose an owner
               </a>
@@ -103,7 +103,7 @@ export function GithubDialog(): JSX.Element {
                 className='text-primary'
                 rel='noopener noreferrer'
                 target='_blank'
-                href='https://github.com/elranu/llavero/fork'
+                href='https://github.com/llaverowallet/llavero/fork'
               >
                 4. Click on Create fork
               </a>
@@ -136,10 +136,14 @@ export function GithubDialog(): JSX.Element {
             <br />
 
             <pre className='whitespace-pre-wrap'>
-              <code className='inline-flex items-center p-4 pl-6 space-x-4 text-sm text-left text-white bg-gray-800 rounded-lg sm:text-base'>{`AWS_ACCESS_KEY_ID: The created KEY ID
+              <code className='inline-flex items-center p-4 pl-6 space-x-4 text-sm text-left text-white bg-gray-800 rounded-lg sm:text-base'>
+                {`AWS_ACCESS_KEY_ID: The created KEY ID
 AWS_SECRET_ACCESS_KEY: The created SECRET KEY
 EMAIL: The email for account recovery and login.
-REGION: us-east-1 or the region of your preference`}</code>
+REGION: us-east-1 or the region of your preference
+NUMBER_OF_KEYS (optional default: 1): The number of KMS to be created
+`}
+              </code>
             </pre>
 
             <br />

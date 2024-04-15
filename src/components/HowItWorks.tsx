@@ -4,16 +4,16 @@ import credentials from '../assets/credentials.svg';
 import installer from '../assets/installer.svg';
 import fork from '../assets/fork.svg';
 import { AwsAccountDialog } from './dialogs/AwsAccountDialog';
-import { AwsCredentialsDialog } from './dialogs/AwsCredentialsDialog';
 import { InstallerDialog } from './dialogs/InstallerDialog';
 import { GithubDialog } from './dialogs/GithubDialog';
+import { AwsCredentialsDialog } from './dialogs/AwsCredentialsDialog';
+import { useState } from 'react';
 
 interface FeatureProps {
   icon: JSX.Element;
   title: string;
   description: string;
   button?: JSX.Element;
-  dialog: JSX.Element;
 }
 
 const features: FeatureProps[] = [
@@ -21,29 +21,27 @@ const features: FeatureProps[] = [
     icon: <img src={aws} style={{ height: '80px' }} />,
     title: 'AWS Account',
     description: 'Create your personal AWS Account. Follow this steps.',
-    dialog: <AwsAccountDialog />,
   },
   {
     icon: <img src={credentials} style={{ height: '80px' }} />,
     title: 'Create AWS Credentials',
     description: "Create AWS credentials required by Llavero's Installer. Follow this steps.",
-    dialog: <AwsCredentialsDialog />,
   },
   {
     icon: <img src={installer} style={{ height: '80px' }} />,
     title: 'Installer',
     description: 'Download the installer for Linux, MacOS or Windows.',
-    dialog: <InstallerDialog />,
   },
   {
     icon: <img src={fork} style={{ height: '80px' }} />,
     title: 'Fork + Github Actions',
     description: "Fork Llavero's repository, setup Github's secrets and run the Github Actions.",
-    dialog: <GithubDialog />,
   },
 ];
 
 export const HowItWorks = () => {
+  const [openAwsCredentialsDialog, setOpenAwsCredentialsDialog] = useState(false);
+
   return (
     <section id='howItWorks' className='container py-20 text-center'>
       <h2 className='text-3xl font-bold md:text-4xl '>
@@ -70,7 +68,7 @@ export const HowItWorks = () => {
           <CardContent>
             <div className='flex flex-col gap-4'>
               {features[0].description}
-              {features[0].dialog}
+              <AwsAccountDialog />
             </div>
           </CardContent>
           <span className='absolute text-5xl font-bold text-transparent top-2 left-3 bg-gradient-to-b from-primary/60 to-primary bg-clip-text'>
@@ -88,7 +86,10 @@ export const HowItWorks = () => {
           <CardContent>
             <div className='flex flex-col gap-4'>
               {features[1].description}
-              {features[1].dialog}
+              <AwsCredentialsDialog
+                open={openAwsCredentialsDialog}
+                setOpenAwsCredentialsDialog={setOpenAwsCredentialsDialog}
+              />
             </div>
           </CardContent>
           <span className='absolute text-5xl font-bold text-transparent top-2 left-3 bg-gradient-to-b from-primary/60 to-primary bg-clip-text'>
@@ -113,7 +114,7 @@ export const HowItWorks = () => {
           <CardContent>
             <div className='flex flex-col gap-4'>
               {features[2].description}
-              {features[2].dialog}
+              <InstallerDialog setOpenAwsCredentialsDialog={setOpenAwsCredentialsDialog} />
             </div>
           </CardContent>
         </Card>
@@ -130,7 +131,7 @@ export const HowItWorks = () => {
           <CardContent>
             <div className='flex flex-col gap-4'>
               {features[3].description}
-              {features[3].dialog}
+              <GithubDialog />
             </div>
           </CardContent>
         </Card>
