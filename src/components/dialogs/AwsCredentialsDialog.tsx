@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
   Dialog,
   DialogContent,
@@ -32,9 +32,22 @@ import seventeenPic from '../../assets/aws-credentials/17.png';
 import eighteenPic from '../../assets/aws-credentials/18.png';
 import nineteenPic from '../../assets/aws-credentials/19.png';
 
-export function AwsCredentialsDialog(): JSX.Element {
+export function AwsCredentialsDialog({
+  open,
+  setOpenAwsCredentialsDialog,
+}: {
+  open?: boolean;
+  setOpenAwsCredentialsDialog: (value: boolean) => void;
+}): JSX.Element {
   const [isOpen, setOpen] = useState<boolean>(false);
-  const onOpenChange = () => setOpen(!isOpen);
+  const onOpenChange = () => {
+    setOpen(!isOpen);
+    setOpenAwsCredentialsDialog(!isOpen);
+  };
+
+  useEffect(() => {
+    setOpen(open ?? false);
+  }, [open]);
 
   return (
     <Dialog open={isOpen} onOpenChange={onOpenChange}>
