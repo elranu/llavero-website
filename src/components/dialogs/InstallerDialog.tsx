@@ -51,24 +51,10 @@ export function InstallerDialog({
                     Llavero-0.1.0-preview.exe
                   </a>
                 </div>
-                {/* <div className='text-sm text-muted-foreground group-hover:text-secondary-foreground'></div> */}
+                <div className='text-sm text-muted-foreground group-hover:text-secondary-foreground'> Not signed, but Windows users can bypass Windows alert</div>
               </div>
             </div>
-            <div className='flex items-center justify-center flex-1 bg-muted group'>
-              <div className='flex flex-col items-center justify-center gap-2 p-8 text-primary'>
-                <MacIcon className='w-12 h-12' />
-                <div className='mb-4 text-secondary-foreground'>MacOS Installer</div>
-                <div className='mb-4 text-xs'>
-                  <a
-                    href='https://github.com/llaverowallet/llavero/releases/download/v0.1.0/Llavero.dmg'
-                    className='underline hover:no-underline'
-                  >
-                    Llavero-0.1.0-preview.dmg
-                  </a>
-                </div>
-                {/* <div className='text-sm text-muted-foreground group-hover:text-secondary-foreground'></div> */}
-              </div>
-            </div>
+
             <div className='flex items-center justify-center flex-1 bg-muted group'>
               <div className='flex flex-col items-center justify-center gap-2 p-8 text-primary'>
                 <LinuxIcon className='w-12 h-12' />
@@ -90,6 +76,25 @@ export function InstallerDialog({
                 {/* <div className='text-sm text-muted-foreground group-hover:text-secondary-foreground'></div> */}
               </div>
             </div>
+
+            <div className='flex items-center justify-center flex-1 bg-muted group'>
+              <div className='flex flex-col items-center justify-center gap-2 p-8 text-primary'>
+                <MacIcon className='w-12 h-12' />
+                <div className='mb-4 text-secondary-foreground'>MacOS Installer</div>
+                <div className='mb-4 text-xs'>
+                  <s><a
+                    href='https://github.com/llaverowallet/llavero/releases/download/v0.1.0/Llavero.dmg'
+                    className='underline hover:no-underline'
+                  >
+                    Llavero-0.1.0-preview.dmg
+                  </a></s>
+                </div>
+                <div className='text-sm text-muted-foreground group-hover:text-secondary-foreground'>
+                DMG not signed. Waiting for Apple Dev program approval
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
 
